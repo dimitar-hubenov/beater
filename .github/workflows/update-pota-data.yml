@@ -24,10 +24,10 @@ jobs:
 
       - name: Commit changes if any
         run: |
-          if git status --porcelain | grep .; then
+          if git status --porcelain public/data | grep .; then
             git config user.name "github-actions"
             git config user.email "github-actions@github.com"
-            git add public/data/pota-parks.json
+            git add public/data/pota-parks.json public/data/pota-parks.checksum
             git commit -m "chore(data): update POTA parks list"
             git push
           else
