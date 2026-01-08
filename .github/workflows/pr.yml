@@ -1,0 +1,108 @@
+# PR Checks & Preview Workflow
+# This workflow runs tests and builds the project on pull requests.
+# If the tests pass, it deploys a preview of the changes to GitHub Pages in a subfolder.
+# When the PR is closed, it cleans up the preview from GitHub Pages.
+
+name: PR Checks & Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  test-and-build:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version:
+          - 'lts/*'
+          - 'current'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Run functional tests
+        run: |
+          if [ -f test.js ]; then
+            node test.js
+          fi
+
+          if [ -d tests ]; then
+            for test in tests/*.js; do
+              node "$test"
+            done
+          fi
+
+  deploy-preview:
+    name: Deploy PR Preview
+    needs: test-and-build
+    if: |
+      github.event.action != 'closed' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build with PR base path
+        run: |
+          npm run build -- --base=/${{ github.event.repository.name }}/pr-${{ github.event.pull_request.number }}/
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./dist
+          destination_dir: pr-${{ github.event.pull_request.number }}
+
+      - name: Comment PR with preview link
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            🚀 **PR Preview Ready**
+            🔗 https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-${{ github.event.pull_request.number }}/
+
+  cleanup-preview:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create empty directory
+        run: mkdir -p /tmp/empty
+
+      - name: Remove PR preview
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: /tmp/empty
+          destination_dir: pr-${{ github.event.pull_request.number }}

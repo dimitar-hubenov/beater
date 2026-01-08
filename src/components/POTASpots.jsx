@@ -464,7 +464,6 @@ const POTASpots = () => {
 	const [selectedBands, setSelectedBands] = useState(DEFAULT_FILTERS.selectedBands);
 	const [selectedModes, setSelectedModes] = useState(DEFAULT_FILTERS.selectedModes);
 	const [maxAgeMinutes, setMaxAgeMinutes] = useState(DEFAULT_FILTERS.maxAgeMinutes);
-	const [customTime, setCustomTime] = useState('');
 	const [activatorCallsign, setActivatorCallsign] = useState(DEFAULT_FILTERS.activatorCallsign);
 	const [userGrid, setUserGrid] = useState(DEFAULT_FILTERS.userGrid);
 	const [maxDistance, setMaxDistance] = useState(DEFAULT_FILTERS.maxDistance);
@@ -653,14 +652,6 @@ const POTASpots = () => {
 	const clearAllModes = useCallback(() => {
 		setSelectedModes([]);
 	}, []);
-
-	// Apply custom time
-	const applyCustomTime = useCallback(() => {
-		const minutes = parseInt(customTime);
-		if (!isNaN(minutes) && minutes >= 0) {
-			setMaxAgeMinutes(minutes);
-		}
-	}, [customTime]);
 
 	// Reset all filters to defaults and clear storage
 	const resetFilters = useCallback(() => {
