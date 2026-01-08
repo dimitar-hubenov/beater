@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-data:
@@ -14,22 +15,39 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: master
 
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
 
       - name: Run data update script
-        run: node scripts/update-pota-parks.mjs
+        run: node scripts/update-pota-parks.mjs    
 
-      - name: Commit changes if any
+      - name: Check for changes
+        id: changes
         run: |
           if git status --porcelain public/data | grep .; then
-            git config user.name "github-actions"
-            git config user.email "github-actions@github.com"
-            git add public/data/pota-parks.json public/data/pota-parks.checksum
-            git commit -m "chore(data): update POTA parks list"
-            git push
+            echo "changed=true" >> $GITHUB_OUTPUT
           else
-            echo "No data changes"
+            echo "changed=false" >> $GITHUB_OUTPUT
           fi
+
+      - name: Create PR
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/update-pota-parks
+          delete-branch: true
+          commit-message: "chore(data): update POTA parks list"
+          title: "chore(data): update POTA parks list"
+          body: |
+            Automated update of the POTA parks dataset.
+
+            - Source: https://pota.app/all_parks_ext.csv
+            - Generated JSON + checksum
+            - Deterministic conversion
+
+            Please review and merge when ready.
+          base: master
