@@ -14,8 +14,26 @@ permissions:
   pull-requests: write
 
 jobs:
+  changes:
+    name: Detect changed files
+    runs-on: ubuntu-latest
+    outputs:
+      data_only: ${{ steps.filter.outputs.data_only }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            data_only:
+              - 'public/data/**'
+
   test-and-build:
-    if: github.event.action != 'closed'
+    if: |
+      github.event_name == 'pull_request' &&
+      github.event.action != 'closed'
     runs-on: ubuntu-latest
 
     strategy:
@@ -54,11 +72,33 @@ jobs:
             done
           fi
 
+  comment-skip-preview:
+    name: Explain skipped preview
+    needs: changes
+    if: |
+      github.event_name == 'pull_request' &&
+      github.event.action != 'closed' &&
+      needs.changes.outputs.data_only == 'true' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Comment on PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            ℹ️ **Preview deployment skipped**
+
+            This pull request only changes static data files under `public/data/`.
+            No UI or code changes were detected, so a preview build was not necessary.
+
   deploy-preview:
     name: Deploy PR Preview
-    needs: test-and-build
+    needs: [test-and-build, changes]
     if: |
+      github.event_name == 'pull_request' &&
       github.event.action != 'closed' &&
+      needs.changes.outputs.data_only != 'true' &&
       github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
 
@@ -92,7 +132,13 @@ jobs:
             🔗 https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-${{ github.event.pull_request.number }}/
 
   cleanup-preview:
-    if: github.event.action == 'closed'
+    name: Cleanup PR preview
+    needs: changes
+    if: |
+      github.event_name == 'pull_request' &&
+      github.event.action == 'closed' &&
+      needs.changes.outputs.data_only != 'true' &&
+      github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
 
     steps:
