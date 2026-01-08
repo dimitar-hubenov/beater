@@ -1,0 +1,35 @@
+name: Update POTA Parks Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1' # every Monday at 03:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Run data update script
+        run: node scripts/update-pota-parks.mjs
+
+      - name: Commit changes if any
+        run: |
+          if git status --porcelain | grep .; then
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git add public/data/pota-parks.json
+            git commit -m "chore(data): update POTA parks list"
+            git push
+          else
+            echo "No data changes"
+          fi
