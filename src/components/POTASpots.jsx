@@ -297,6 +297,10 @@ const formatTimeForTable = (dateString) => {
 	});
 };
 
+const publicUrl = (path) => {
+	return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+}
+
 // ============== CONSTANTS ==============
 const MODES = [
 	{ id: 'SSB', label: 'SSB (USB/LSB)' },
@@ -523,7 +527,7 @@ const POTASpots = () => {
 		const loadParksData = async () => {
 			try {
 				setLoadingParks(true);
-				const response = await fetch('/data/pota-parks.json');
+				const response = await fetch(publicUrl('/data/pota-parks.json'));
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);
 				}
