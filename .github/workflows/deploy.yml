@@ -30,17 +30,8 @@ jobs:
       - run: npm run lint
       - run: npm run build
 
-      - name: Run functional tests
-        run: |
-          if [ -f test.js ]; then
-            node test.js
-          fi
-
-          if [ -d tests ]; then
-            for test in tests/*.js; do
-              node "$test"
-            done
-          fi
+      - name: Run tests
+        run: npm run test:run
 
   deploy:
     needs: test-and-build

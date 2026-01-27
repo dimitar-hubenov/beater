@@ -1,0 +1,12 @@
+{
+    "app.name": "Beater",
+    "filters.title": "Filters",
+    "filters.distance": "Distance",
+    "filters.bands": "Bands",
+    "table.distance": "Distance",
+    "table.band": "Band",
+    "table.mode": "Mode",
+    "settings.title": "Settings",
+    "settings.language": "Language",
+    "settings.theme": "Theme"
+}
