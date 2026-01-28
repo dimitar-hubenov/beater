@@ -1,5 +1,5 @@
 ﻿// src/App.jsx
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
 import SpotsPage from './pages/SpotsPage';
 import SettingsPage from './pages/SettingsPage';
@@ -14,14 +14,14 @@ function AppContent() {
   return (
     <I18nProvider language={settings.language}>
       <SpotsRuntimeProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route element={<AppLayout />}>
               <Route path="/" element={<SpotsPage />} />
               <Route path="/settings" element={<SettingsPage />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </SpotsRuntimeProvider>
     </I18nProvider>
   );
