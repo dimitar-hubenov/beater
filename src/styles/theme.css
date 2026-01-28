@@ -1,0 +1,100 @@
+/* =========================================
+   Semantic Theme Tokens
+   These are the ONLY variables used in JSX
+   ========================================= */
+
+:root {
+    /* Base layout */
+    --bg-main: #f9fafb; /* app background */
+    --bg-panel: #ffffff; /* panels, cards */
+    --bg-muted: #f3f4f6; /* muted / hover */
+
+    /* Text */
+    --text-main: #111827; /* primary text */
+    --text-secondary: #374151; /* secondary */
+    --text-muted: #6b7280;
+
+    /* Borders */
+    --border: #d1d5db;
+    --border-muted: #e5e7eb;
+
+    /* Accent */
+    --accent: #2563eb;
+
+    /* Buttons */
+    --btn-bg: var(--bg-muted);
+    --btn-bg-hover: var(--bg-panel);
+    --btn-text: var(--text-secondary);
+
+    --btn-active-bg: var(--accent);
+    --btn-active-text: #ffffff;
+
+    /* Inputs */
+    --input-bg: var(--bg-panel);
+    --input-text: var(--text-main);
+    --input-border: var(--border);
+    --input-border-focus: var(--accent);
+
+    /* Labels */
+    --label-text: var(--text-secondary);
+
+    /* Tables (INTENTIONALLY minimal) */
+    --table-row-hover: var(--bg-muted);
+
+    /* Scrollbars */
+    --scroll-track: var(--bg-panel);
+    --scroll-thumb: var(--border);
+
+    /* Status */
+    --color-success: #16a34a;
+    --color-warning: #ca8a04;
+    --color-danger: #dc2626;
+}
+
+.dark {
+    /* Base layout */
+    --bg-main: #030712;
+    --bg-panel: #111827;
+    --bg-muted: #1f2937;
+
+    /* Text */
+    --text-main: #f9fafb;
+    --text-secondary: #d1d5db;
+    --text-muted: #9ca3af;
+
+    /* Borders */
+    --border: #374151;
+    --border-muted: #1f2937;
+
+    /* Accent */
+    --accent: #3b82f6;
+
+    /* Buttons */
+    --btn-bg: var(--bg-muted);
+    --btn-bg-hover: var(--bg-panel);
+    --btn-text: var(--text-secondary);
+
+    --btn-active-bg: var(--accent);
+    --btn-active-text: #ffffff;
+
+    /* Inputs */
+    --input-bg: var(--bg-panel);
+    --input-text: var(--text-main);
+    --input-border: var(--border);
+    --input-border-focus: var(--accent);
+
+    /* Labels */
+    --label-text: var(--text-secondary);
+
+    /* Tables */
+    --table-row-hover: var(--bg-muted);
+
+    /* Scrollbars */
+    --scroll-track: var(--bg-panel);
+    --scroll-thumb: var(--border);
+
+    /* Status */
+    --color-success: #22c55e;
+    --color-warning: #eab308;
+    --color-danger: #ef4444;
+}

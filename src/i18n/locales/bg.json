@@ -1,0 +1,12 @@
+{
+    "app.name": "Beater",
+    "filters.title": "Филтри",
+    "filters.distance": "Разстояние",
+    "filters.bands": "Обхвати",
+    "table.distance": "Разстояние",
+    "table.band": "Обхват",
+    "table.mode": "Режим",
+    "settings.title": "Настройки",
+    "settings.language": "Език",
+    "settings.theme": "Тема"
+}

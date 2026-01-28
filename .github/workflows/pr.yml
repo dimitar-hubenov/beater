@@ -60,17 +60,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Run functional tests
-        run: |
-          if [ -f test.js ]; then
-            node test.js
-          fi
-
-          if [ -d tests ]; then
-            for test in tests/*.js; do
-              node "$test"
-            done
-          fi
+      - name: RRun tests
+        run: npm run test:run
 
   comment-skip-preview:
     name: Explain skipped preview

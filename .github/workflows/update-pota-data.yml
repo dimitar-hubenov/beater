@@ -23,7 +23,7 @@ jobs:
           node-version: lts/*
 
       - name: Run data update script
-        run: node scripts/update-pota-parks.mjs
+        run: node scripts/update-reference-data.mjs
 
       - name: Check for changes
         id: changes
