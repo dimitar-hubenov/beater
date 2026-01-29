@@ -12,6 +12,7 @@ describe('BandUtils parse string to Band', () => {
         ['', 'unknown'],
         [null, 'unknown'],
         [undefined, 'unknown'],
+        ['invalidband', 'unknown'],
     ]) ('parses "%s" -> %s', (raw, expected) => {
         expect(BandUtils.parse(raw as any)).toBe(expected);
     });
@@ -35,7 +36,7 @@ describe('BandUtils detect Band from frequency', () => {
         [undefined],
         [NaN],
         [999999],
-    ]) ('returns Other for invalid frequency %s', (freq) => {
+    ])('returns unknown for invalid frequency %s', (freq) => {
         expect(BandUtils.detectFromFrequency(freq as any)).toBe('unknown');
     });
 

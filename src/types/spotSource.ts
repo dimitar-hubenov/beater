@@ -1,57 +1,61 @@
-// Дефинирай обекта за SpotSource информация
+// src/types/spotSource.ts
+
+export type SourceRefreshRange = {
+    min: number;
+    max: number;
+};
+
+export type SourceInfo = {
+    label: string;
+    refreshRange: SourceRefreshRange;
+    available: boolean;
+};
+
 const SOURCE_INFO = {
     POTA: {
-        rateMin: 60,      // Min refresh interval in seconds
-        rateMax: 300,     // Max refresh interval in seconds
-        available: true 
+        label: "POTA",
+        refreshRange: { min: 60, max: 300 },
+        available: true
     },
     SOTA: {
-        rateMin: 60,
-        rateMax: 300,
-        available: false  // not implemented yet
+        label: "SOTA",
+        refreshRange: { min: 60, max: 300 },
+        available: true
     },
     WWFF: {
-        rateMin: 60,
-        rateMax: 300,
-        available: false  // not implemented yet
+        label: "WWFF",
+        refreshRange: { min: 60, max: 300 },
+        available: true
     }
-} as const;
+} as const satisfies Record<string, SourceInfo>;
 
 export type SpotSource = keyof typeof SOURCE_INFO;
 
+function isSpotSource(source: string): source is SpotSource {
+    return source in SOURCE_INFO;
+}
+
 export const SourceUtils = {
 
-    parse(rawSource: string | null | undefined): SpotSource | null {
-        if (rawSource == null || rawSource.trim() === '') {
-            return null;
-        }
-
-        const normalized = rawSource.trim().toUpperCase();
-        const sourceKey = Object.keys(SOURCE_INFO).find(
-            key => key.toUpperCase() === normalized
-        ) as SpotSource | undefined;
-
-        return sourceKey || null;
+    getSourcesArray(): Array<{
+        source: SpotSource;
+        label: string;
+        rateMin: number;
+        rateMax: number;
+        available: boolean;
+    }> {
+        return (Object.entries(SOURCE_INFO) as [SpotSource, typeof SOURCE_INFO[SpotSource]][])
+            .map(([source, info]) => ({
+                source,
+                label: info.label,
+                rateMin: info.refreshRange.min,
+                rateMax: info.refreshRange.max,
+                available: info.available
+            }));
     },
 
-    isAvailable(source: SpotSource): boolean {
-        return SOURCE_INFO[source].available;
-    },
-
-    getRateLimits(source: SpotSource): { rateMin: number; rateMax: number } {
-        const info = SOURCE_INFO[source];
-        return {
-            rateMin: info.rateMin,
-            rateMax: info.rateMax
-        };
-    },
-
-    getMinRate(source: SpotSource): number {
-        return SOURCE_INFO[source].rateMin;
-    },
-
-    getMaxRate(source: SpotSource): number {
-        return SOURCE_INFO[source].rateMax;
+    getAllSources(): SpotSource[] {
+        return Object.keys(SOURCE_INFO) as SpotSource[];
     },
 
     getAvailableSources(): SpotSource[] {
@@ -60,31 +64,40 @@ export const SourceUtils = {
             .map(([source]) => source);
     },
 
-    getAllSources(): SpotSource[] {
-        return Object.keys(SOURCE_INFO) as SpotSource[];
+
+    isAvailable(source: SpotSource): boolean | undefined {
+        if (!isSpotSource(source)) { return undefined; }
+        return SOURCE_INFO[source].available;
     },
 
-    getSourceInfo(source: SpotSource): typeof SOURCE_INFO[SpotSource] {
+    getRateLimits(source: SpotSource): SourceRefreshRange | unknown {
+        if (!isSpotSource(source)) { return undefined; }
+        return SOURCE_INFO[source].refreshRange;
+    },
+
+    getMinRate(source: SpotSource): number| undefined {
+        if (!isSpotSource(source)) { return undefined; }
+        return SOURCE_INFO[source].refreshRange.min;
+    },
+
+    getMaxRate(source: SpotSource): number| undefined {
+        if (!isSpotSource(source)) { return undefined; }
+        return SOURCE_INFO[source].refreshRange.max;
+    },
+
+    getSourceInfo(source: SpotSource): SourceInfo | undefined {
+        if (!isSpotSource(source)) { return undefined; }
         return SOURCE_INFO[source];
     },
 
-    getSourcesArray(): Array<{
-        source: SpotSource;
-        rateMin: number;
-        rateMax: number;
-        available: boolean;
-    }> {
-        return (Object.entries(SOURCE_INFO) as [SpotSource, typeof SOURCE_INFO[SpotSource]][])
-            .map(([source, info]) => ({
-                source,
-                rateMin: info.rateMin,
-                rateMax: info.rateMax,
-                available: info.available
-            }));
+    getLabel(source: SpotSource): string | undefined {
+        if (!isSpotSource(source)) { return undefined; }
+        return SOURCE_INFO[source].label;
     },
 
-    isValidRate(rate: number, source: SpotSource): boolean {
+    isValidRate(rate: number, source: SpotSource): boolean | undefined {
+        if (!isSpotSource(source)) { return undefined; }
         const info = SOURCE_INFO[source];
-        return rate >= info.rateMin && rate <= info.rateMax;
+        return rate >= info.refreshRange.min && rate <= info.refreshRange.max;
     }
 };
