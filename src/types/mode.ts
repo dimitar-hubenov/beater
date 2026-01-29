@@ -1,6 +1,11 @@
 // src/types/mode.ts
 
-// Mode main object definition
+export type ModeGroup = string;
+
+export type ModeInfo = {
+    group: ModeGroup;
+};
+
 const MODE_INFO = {
     SSB: { group: 'SSB' as const },
     USB: { group: 'SSB' as const },
@@ -24,19 +29,23 @@ const MODE_INFO = {
     WSPR: { group: 'DIGI' as const },
     FM: { group: 'FM' as const },
     AM: { group: 'AM' as const },
-    Other: { group: 'Other' as const },
-} as const;
+    unknown: { group: 'unknown' as const },
+} as const satisfies Record<string, ModeInfo>;
 
 // Extract the types from the object
 export type Mode = keyof typeof MODE_INFO;
 export type ModeToggle = typeof MODE_INFO[Mode]['group'];
+
+function isMode(mode: string): mode is Mode {
+    return mode in MODE_INFO;
+}
 
 // Helper functions
 export const ModeUtils = {
 
     parse(rawMode: string | null | undefined): Mode {
         if (rawMode == null || rawMode.trim() === '') {
-            return 'Other';
+            return 'unknown';
         }
 
         const normalized = rawMode.trim().toUpperCase();
@@ -44,10 +53,21 @@ export const ModeUtils = {
             key => key.toUpperCase() === normalized
         ) as Mode | undefined;
 
-        return modeKey || 'Other';
+        return modeKey || 'unknown';
     },
 
-    getToggleForMode(mode: Mode): ModeToggle {
+    getAllModes(): Mode[] {
+        return Object.keys(MODE_INFO) as Mode[];
+    },
+
+    getAllTogglesArray(): ModeToggle[] {
+        return Array.from(new Set(
+            Object.values(MODE_INFO).map(info => info.group)
+        ));
+    },
+
+    getToggleForMode(mode: Mode): ModeToggle | undefined {
+        if (!isMode(mode)) { return undefined; }
         return MODE_INFO[mode].group;
     },
 
@@ -67,16 +87,11 @@ export const ModeUtils = {
         }));
     },
 
-    isModeInToggle(mode: Mode, toggle: ModeToggle): boolean {
+    isModeInToggle(mode: Mode, toggle: ModeToggle): boolean | undefined {
+        if (!isMode(mode)) { return undefined; }
         return MODE_INFO[mode].group === toggle;
-    },
-
-    getAllToggles(): ModeToggle[] {
-        return Array.from(new Set(
-            Object.values(MODE_INFO).map(info => info.group)
-        ));
-    }
+    },    
 };
 
-// Pregenerated array
+// Pregenerated arrays
 export const MODE_TOGGLES = ModeUtils.getModeToggles();

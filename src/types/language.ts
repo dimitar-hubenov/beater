@@ -1,4 +1,10 @@
 // src/types/languages.ts
+
+type LanguageInfo = {
+    label: string;
+    available: boolean;
+};
+
 const LANGUAGE_INFO = {
     en: {
         label: "English",
@@ -8,29 +14,15 @@ const LANGUAGE_INFO = {
         label: "Български",
         available: true
     },
-} as const;
+} as const satisfies Record<string, LanguageInfo>;
 
 export type Language = keyof typeof LANGUAGE_INFO;
 
+export function isLanguage(lang: string): lang is Language {
+    return lang in LANGUAGE_INFO;
+}
+
 export const LanguageUtils = {
-
-    isAvailable(lang: Language): boolean {
-        return LANGUAGE_INFO[lang].available;
-    },
-
-    getLabel(lang: Language): string {
-        return LANGUAGE_INFO[lang].label;
-    },
-
-    getAvailableLanguages(): Language[] {
-        return (Object.entries(LANGUAGE_INFO) as [Language, typeof LANGUAGE_INFO[Language]][])
-            .filter(([, info]) => info.available)
-            .map(([lang]) => lang);
-    },
-
-    getAllLanguages(): Language[] {
-        return Object.keys(LANGUAGE_INFO) as Language[];
-    },
 
     getLanguagesArray(): Array<{
         language: Language;
@@ -44,9 +36,29 @@ export const LanguageUtils = {
                 available: info.available
             }));
     },
-    
 
-    getLanguageInfo(source: Language): typeof LANGUAGE_INFO[Language] {
+    getAllLanguages(): Language[] {
+        return Object.keys(LANGUAGE_INFO) as Language[];
+    },
+
+    getAvailableLanguages(): Language[] {
+        return (Object.entries(LANGUAGE_INFO) as [Language, typeof LANGUAGE_INFO[Language]][])
+            .filter(([, info]) => info.available)
+            .map(([lang]) => lang);
+    },
+
+    isAvailable(lang: Language): boolean | undefined {
+        if (!isLanguage(lang)) { return undefined; }
+        return LANGUAGE_INFO[lang].available;
+    },
+
+    getLabel(lang: Language): string | undefined {
+        if (!isLanguage(lang)) { return undefined; }
+        return LANGUAGE_INFO[lang].label;
+    },
+
+    getLanguageInfo(source: Language): typeof LANGUAGE_INFO[Language] | undefined {
+        if (!isLanguage(source)) { return undefined; }
         return LANGUAGE_INFO[source];
     }
 };

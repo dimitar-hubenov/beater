@@ -172,7 +172,7 @@ export const BandUtils = {
 
     // Toggle related functions
 
-    getAllTogglesArray(): BandToggle[] { // NOT USED!!!
+    getAllTogglesArray(): BandToggle[] {
         return Array.from(new Set(
             Object.values(BAND_INFO).map(info => info.group)
         ));

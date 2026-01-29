@@ -95,9 +95,9 @@ describe('normalizeSotaSpot', () => {
         [{ mode: 'CW' }, 'CW'],
         [{ mode: 'FT8' }, 'FT8'],
         [{ mode: 'ft4' }, 'FT4'],
-        [{ mode: 'Emc2' }, 'Other'],
-        [{ mode: '' }, 'Other'],
-        [{ mode: undefined }, 'Other'],
+        [{ mode: 'Emc2' }, 'unknown'],
+        [{ mode: '' }, 'unknown'],
+        [{ mode: undefined }, 'unknown'],
     ])('parses mode safely %o', (override, expected) => {
         const normalizedSpot = normalizeSotaSpot(makeSotaRawSpot(override as any));
         expect(normalizedSpot.mode).toBe(expected);
