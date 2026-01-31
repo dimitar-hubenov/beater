@@ -8,6 +8,7 @@ import { useUserSettings } from '../settings/useUserSettings';
 import { sortSpots, getInitialSortConfig, getNextSortDirection, type SortConfig } from '../utils/spotSorting';
 import { formatCallsign } from '../utils/callsign';
 import { DistanceUnit } from '../types/userSettings';
+import { useI18n } from '../i18n/useI18n';
 
 type Column<T> = {
     key: string;
@@ -24,6 +25,8 @@ type SpotsTableProps = {
 };
 
 export default function SpotsTable({ spots, loading = false }: SpotsTableProps) {
+    const { t } = useI18n();
+
     const { settings } = useUserSettings();
     const showDistance = Boolean(settings.qthLat && settings.qthLon);
 
@@ -57,7 +60,7 @@ export default function SpotsTable({ spots, loading = false }: SpotsTableProps) 
                 <div className={`min-h-screen flex items-center justify-center`}>
                     <div className="text-center">
                         <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mx-auto mb-4"></div>
-                        <p className="text-(--text-primary)">Loading spots...</p>
+                        <p className="text-(--text-primary)">{t('spots.results.loading.message')}</p>
                     </div>
                 </div>
             );
@@ -71,26 +74,26 @@ export default function SpotsTable({ spots, loading = false }: SpotsTableProps) 
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h3 className="text-lg font-medium text-(--text-primary) mb-2">No spots match your filters</h3>
-                <p className="text-(--text-muted)">Try adjusting your filter settings</p>
+                <h3 className="text-lg font-medium text-(--text-primary) mb-2">{t('spots.results.noSpots.title')}</h3>
+                <p className="text-(--text-muted)">{t('spots.results.noSpots.message')}</p>
             </div>
         );
     }
 
     // contant is needed for conditional column
     const distanceColumn: Column<SpotUI> = 
-        { key: 'distance', label: 'Distance', sortable: true, render: s => formatDistance(s.distanceKm, settings.distanceUnit), align: 'right', className: 'w-1' };
+        { key: 'distance', label: t('spots.results.tableColumns.distance.label'), sortable: true, render: s => formatDistance(s.distanceKm, settings.distanceUnit), align: 'right', className: 'w-1' };
 
     const columns: Column<SpotUI>[] = [
-        { key: 'activator', label: 'Activator', sortable: true, render: s => formatCallsign(s.activator), align: 'center', className: 'font-mono w-1' },
-        { key: 'program', label: 'Prog', sortable: true, render: s => <ProgramBadge program={s.program} />, className: 'w-1' },
-        { key: 'reference', label: 'Reference', sortable: true, render: s => s.reference, align: 'center', className: 'font-mono w-1' },
-        { key: 'frequency', label: 'Frequency', sortable: true, render: s => formatFreq(s.frequency), align: 'right', className: 'font-mono w-1' },
-        { key: 'mode', label: 'Mode', sortable: true, render: s => s.mode, align: 'center', className: 'w-1' },
+        { key: 'activator', label: t('spots.results.tableColumns.activator.label'), sortable: true, render: s => formatCallsign(s.activator), align: 'center', className: 'font-mono w-1' },
+        { key: 'program', label: t('spots.results.tableColumns.program.label'), sortable: true, render: s => <ProgramBadge program={s.program} />, className: 'w-1' },
+        { key: 'reference', label: t('spots.results.tableColumns.reference.label'), sortable: true, render: s => s.reference, align: 'center', className: 'font-mono w-1' },
+        { key: 'frequency', label: t('spots.results.tableColumns.frequency.label'), sortable: true, render: s => formatFreq(s.frequency), align: 'right', className: 'font-mono w-1' },
+        { key: 'mode', label: t('spots.results.tableColumns.mode.label'), sortable: true, render: s => s.mode, align: 'center', className: 'w-1' },
         ...(showDistance ? [distanceColumn] : []),
-        { key: 'time', label: 'Time', sortable: true, render: s => formatTimeAge(s.time), align: 'right', className: 'w-1 ' },
-        { key: 'spotter', label: 'Spotter', sortable: true, render: s => s.spotter, align: 'center', className: 'font-mono w-1' },
-        { key: 'comments', label: 'Comments', sortable: false, render: s => s.comments, className: 'truncate max-w-[24rem]' }
+        { key: 'time', label: t('spots.results.tableColumns.time.label'), sortable: true, render: s => formatTimeAge(s.time), align: 'right', className: 'w-1 ' },
+        { key: 'spotter', label: t('spots.results.tableColumns.spotter.label'), sortable: true, render: s => s.spotter, align: 'center', className: 'font-mono w-1' },
+        { key: 'comments', label: t('spots.results.tableColumns.comments.label'), sortable: false, render: s => s.comments, className: 'truncate max-w-[24rem]' }
     ];
 
     return (

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, ReactNode } from 'react';
 import { useMediaQuery } from '../hooks/useMediaQuery';
+import { useI18n } from '../i18n/useI18n';
 
 type SpotsLayoutProps = {
     filters: ReactNode;
@@ -9,6 +10,7 @@ type SpotsLayoutProps = {
 };
 
 export default function SpotsLayout({ filters, content }: SpotsLayoutProps) {
+    const { t } = useI18n();
     const isDesktop = useMediaQuery('(min-width: 768px)');
     const [filtersOpen, setFiltersOpen] = useState(isDesktop);
 
@@ -58,7 +60,7 @@ export default function SpotsLayout({ filters, content }: SpotsLayoutProps) {
                                     transition
                                 "
                             >
-                                ✕ Close
+                                ✕ {t('filters.btnClose.label')}
                             </button>
                         </div>
                     )}
@@ -90,7 +92,7 @@ export default function SpotsLayout({ filters, content }: SpotsLayoutProps) {
                                 transition
                             "
                         >
-                            ☰ Filters
+                            ☰ {t('filters.btnFilters.label')}
                         </button>
                     </div>
                 )}

@@ -27,7 +27,7 @@ export default function SpotsPage() {
     if (error) {
         return (
             <div className="p-4 text-red-400">
-                {error.message || 'Failed to load spots'}
+                {error.message}
             </div>
         );
     }

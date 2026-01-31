@@ -1,12 +1,127 @@
 {
-    "app.name": "Beater",
-    "filters.title": "Filters",
-    "filters.distance": "Distance",
-    "filters.bands": "Bands",
-    "table.distance": "Distance",
-    "table.band": "Band",
-    "table.mode": "Mode",
-    "settings.title": "Settings",
-    "settings.language": "Language",
-    "settings.theme": "Theme"
+  "app": {
+    "title": "Beater"
+  },
+  "filters": {
+    "btnClose": {
+      "label": "Close"
+    },
+    "btnFilters": {
+      "label": "Filters"
+    },
+    "activator": {
+      "label": "Activator",
+      "placeholder": "e.g. LZ1, *ABC, DL*"
+    },
+    "bands": {
+      "label": "Bands"
+    },
+    "maxAge": {
+      "label": "Max Age",
+      "placeholder": "Minutes",
+      "status": {
+        "minutes": "min",
+        "off": "Off"
+      }
+    },
+    "maxDistance": {
+      "label": "Max Distance",
+      "status": {
+        "off": "Off"
+      }
+    },
+    "modes": {
+      "label": "Modes"
+    },
+    "reference": {
+      "label": "Reference",
+      "placeholder": "e.g. POTA-1234"
+    }
+  },
+  "settings": {
+    "btnSettings": {
+      "label": "Settings"
+    },
+    "btnBack": {
+      "label": "Back"
+    },
+    "pageTitle": "Settings",
+    "refreshInterval": {
+      "label": "Refresh Interval",
+      "placeholder": "Minutes",
+      "minutes": "min"
+    },
+    "distance": {
+      "label": "Distance"
+    },
+    "programsFetch": {
+      "label": "Programs Fetch"
+    },
+    "qth": {
+      "label": "QTH (Grid)",
+      "placeholder": "AB12cd",
+      "status": {
+        "invalidCoordinates": "Invalid coordinates",
+        "invalidGrid": "Invalid grid",
+        "noQth": "No QTH set"
+      }
+    },
+    "distanceUnits": {
+      "label": "Distance Units"
+    },
+    "language": {
+      "label": "Language"
+    },
+    "theme": {
+      "label": "Theme",
+      "themes": {
+        "dark": "Dark",
+        "light": "Light",
+        "system": "System"
+      }
+    }
+  },
+  "spots": {
+    "fetch": {
+      "errorDefault": "An error occurred while fetching spots"
+    },
+    "results": {
+      "loading": {
+        "message": "Loading spots..."
+      },
+      "noSpots": {
+        "title": "No spots match your filters",
+        "message": "Please try adjusting your filter settings"
+      },
+      "tableColumns": {
+        "activator": {
+          "label": "Activator"
+        },
+        "comments": {
+          "label": "Comments"
+        },
+        "distance": {
+          "label": "Distance"
+        },
+        "frequency": {
+          "label": "Frequency"
+        },
+        "mode": {
+          "label": "Mode"
+        },
+        "program": {
+          "label": "Prog"
+        },
+        "reference": {
+          "label": "Reference"
+        },
+        "spotter": {
+          "label": "Spotter"
+        },
+        "time": {
+          "label": "Time"
+        }
+      }
+    }
+  }
 }

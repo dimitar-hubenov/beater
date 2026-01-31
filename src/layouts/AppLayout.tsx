@@ -18,7 +18,7 @@ export default function AppLayout() {
             >
                 {/* Left: App identity */}
                 <div className="font-semibold tracking-wide">
-                    📡 Beater
+                    📡 {t('app.title')}
                 </div>
 
                 {/* Right: Global actions */}
@@ -30,7 +30,7 @@ export default function AppLayout() {
                         transition
                     "
                 >
-                    ⚙ {t('settings.title')}
+                    ⚙ {t('settings.btnSettings.label')}
                 </Link>
             </header>
 

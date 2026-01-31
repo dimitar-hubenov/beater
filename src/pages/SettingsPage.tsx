@@ -6,8 +6,10 @@ import { LanguageUtils, type Language } from '../types/language';
 import { SpotSource } from '../types/spotSource';
 import { formatSeconds } from '../utils/time';
 import { validateGrid, gridToPoint, pointToGrid } from '@hamlog/maidenhead';
+import { useI18n } from '../i18n/useI18n';
 
 export default function SettingsPage() {
+    const { t } = useI18n();
     const navigate = useNavigate();
     const { settings, actions } = useUserSettings();
 
@@ -16,17 +18,17 @@ export default function SettingsPage() {
             <div className="max-w-xl mx-auto p-4 space-y-6">
                 {/* Header */}
                 <div className="flex items-center justify-between">
-                    <h1 className="text-xl font-semibold">Settings</h1>
+                    <h1 className="text-xl font-semibold">{t('settings.pageTitle')}</h1>
                     <button
                         onClick={() => navigate('/')}
                         className="px-3 py-2 rounded bg-gray-800 border border-gray-700"
                     >
-                        ← Back
+                        ← {t('settings.btnBack.label')}
                     </button>
                 </div>
 
                 {/* Sections */}
-                <SettingsSection title="Programs Fetch">
+                <SettingsSection title={t('settings.programsFetch.label')}>
                     <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 alpha gap-4">
                         {[
                             { key: 'POTA', label: 'POTA', title: "Parks on the Air" },
@@ -47,9 +49,9 @@ export default function SettingsPage() {
                     </div>
                     <div className="space-y-2">
                         <div className="flex items-center justify-between text-sm text-(--label-text)">
-                            <span>Refresh interval</span>
+                            <span>{t('settings.refreshInterval.label')}</span>
                             <span>
-                                {formatSeconds(settings.programRefreshInterval)}
+                                {`${formatSeconds(settings.programRefreshInterval)} ${t('settings.refreshInterval.minutes')}`}
                             </span>
                         </div>
 
@@ -74,7 +76,7 @@ export default function SettingsPage() {
                             type="number"
                             min={60}
                             max={300}
-                            placeholder="Minutes"
+                            placeholder={t('settings.refreshInterval.placeholder')}
                             value={settings.programRefreshInterval ?? ''}
                             onChange={e => {
                                 const value = Number(e.target.value);
@@ -91,11 +93,11 @@ export default function SettingsPage() {
                     </div>
                 </SettingsSection>
 
-                <SettingsSection title="Distance">
+                <SettingsSection title={t('settings.distance.label')}>
                     <div className="flex items-end gap-4">
                         {/* QTH input */}
                         <div className="flex flex-col w-1/4 min-w-32">
-                            <label htmlFor="settingsQth" className="text-xs text-(--label-text) pb-1">QTH (Grid)</label>
+                            <label htmlFor="settingsQth" className="text-xs text-(--label-text) pb-1">{t('settings.qth.label')}</label>
                             <input
                                 id="settingsQth"
                                 type="text"
@@ -103,7 +105,7 @@ export default function SettingsPage() {
                                 onChange={e => {
                                     actions.setQthGrid(e.target.value);
                                 }}
-                                placeholder="AB12cd"
+                                placeholder={t('settings.qth.placeholder')}
                                 className="
                                     px-2 py-1.5 rounded
                                     bg-(--input-bg) text-sm
@@ -124,7 +126,7 @@ export default function SettingsPage() {
 
                         {/* Unit switch */}
                         <div className="flex flex-col items-start">
-                            <label htmlFor="distanceUnitSwitch" className="text-xs text-(--label-text) pb-1">Units</label>
+                            <label htmlFor="distanceUnitSwitch" className="text-xs text-(--label-text) pb-1">{t('settings.distanceUnits.label')}</label>
                             <DistanceUnitSwitch
                                 value={settings.distanceUnit}
                                 onChange={actions.setDistanceUnit}
@@ -133,14 +135,14 @@ export default function SettingsPage() {
                     </div>
                 </SettingsSection>
 
-                <SettingsSection title="Language">
+                <SettingsSection title={t('settings.language.label')}>
                     <LanguageSelector
                         value={settings.language}
                         onChange={actions.setLanguage}
                     />
                 </SettingsSection>
 
-                <SettingsSection title="Appearance">
+                <SettingsSection title={t('settings.theme.label')}>
                     <ThemeSelector
                         value={settings.theme}
                         onChange={actions.setTheme}
@@ -176,16 +178,17 @@ function QthStatus({
     lat?: number | null;
     lon?: number | null;
 }) {
+    const { t } = useI18n();
     if (!grid) {
-        return <span>No QTH set</span>;
+        return <span>{t('settings.qth.status.noQth')}</span>;
     }
 
     if (!validateGrid(grid)) {
-        return <span className="text-yellow-400">Invalid grid square</span>;
+        return <span className="text-yellow-400">{t('settings.qth.status.invalidGrid')}</span>;
     }
 
     if (lat == null || lon == null) {
-        return <span className="text-yellow-400">Invalid grid square</span>;
+        return <span className="text-yellow-400">{t('settings.qth.status.invalidCoordinates')}</span>;
     }
 
     return (
@@ -196,7 +199,7 @@ function QthStatus({
             className="hover:underline"
         >
             <span className="text-green-400">
-                Lat {lat.toFixed(6)}, Lon {lon.toFixed(6)}
+                {lat.toFixed(6)}, {lon.toFixed(6)}
             </span>
         </a>
     );
@@ -262,21 +265,6 @@ function DistanceUnitSwitch({
     );
 }
 
-function ThemeSelector({ value, onChange }: { value: Theme; onChange: (theme: Theme) => void }) {
-    return (
-        <select
-            id="themeSelector"
-            value={value}
-            onChange={e => onChange(e.target.value as Theme)}
-            className="w-full px-3 py-2 rounded bg-(--bg-muted) border border-(--border)"
-        >
-            <option value="system">System</option>
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-        </select>
-    );
-}
-
 function LanguageSelector({ value, onChange }: { value: Language; onChange: (lang: Language) => void }) {
     const languages = LanguageUtils.getAvailableLanguages();
     return (
@@ -289,6 +277,22 @@ function LanguageSelector({ value, onChange }: { value: Language; onChange: (lan
             {languages.map(lang => (
                 <option key={lang} value={lang}>{LanguageUtils.getLabel(lang)}</option>
             ))}
+        </select>
+    );
+}
+
+function ThemeSelector({ value, onChange }: { value: Theme; onChange: (theme: Theme) => void }) {
+    const { t } = useI18n();
+    return (
+        <select
+            id="themeSelector"
+            value={value}
+            onChange={e => onChange(e.target.value as Theme)}
+            className="w-full px-3 py-2 rounded bg-(--bg-muted) border border-(--border)"
+        >
+            <option value="system">{t('settings.theme.themes.system')}</option>
+            <option value="dark">{t('settings.theme.themes.dark')}</option>
+            <option value="light">{t('settings.theme.themes.light')}</option>
         </select>
     );
 }

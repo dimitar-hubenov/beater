@@ -11,7 +11,9 @@
     "test": "vitest",
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "update-reference-data": "node scripts/update-reference-data.mjs"
+    "update-reference-data": "node scripts/update-reference-data.mjs",
+    "i18n:extract": "node scripts/extract-i18n-keys.mjs",
+    "i18n:check": "npm run i18n:extract"
   },
   "dependencies": {
     "@hamlog/maidenhead": "^1.0.0",
@@ -20,6 +22,8 @@
     "react-router-dom": "^7.12.0"
   },
   "devDependencies": {
+    "@babel/parser": "^7.28.6",
+    "@babel/traverse": "^7.28.6",
     "@eslint/js": "^9.39.1",
     "@tailwindcss/postcss": "^4.1.18",
     "@testing-library/jest-dom": "^6.9.1",
@@ -30,6 +34,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
+    "glob": "^13.0.0",
     "globals": "^16.5.0",
     "jsdom": "^27.4.0",
     "postcss": "^8.5.6",
