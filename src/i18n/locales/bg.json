@@ -1,12 +1,127 @@
 {
-    "app.name": "Beater",
-    "filters.title": "Филтри",
-    "filters.distance": "Разстояние",
-    "filters.bands": "Обхвати",
-    "table.distance": "Разстояние",
-    "table.band": "Обхват",
-    "table.mode": "Режим",
-    "settings.title": "Настройки",
-    "settings.language": "Език",
-    "settings.theme": "Тема"
+  "app": {
+    "title": "Beater"
+  },
+  "filters": {
+    "btnClose": {
+      "label": "Затвори"
+    },
+    "btnFilters": {
+      "label": "Филтри"
+    },
+    "activator": {
+      "label": "Активатор",
+      "placeholder": "напр. LZ1, *ABC, DL*"
+    },
+    "bands": {
+      "label": "Честотни ленти"
+    },
+    "maxAge": {
+      "label": "Време",
+      "placeholder": "Минути",
+      "status": {
+        "minutes": "мин",
+        "off": "Изключено"
+      }
+    },
+    "maxDistance": {
+      "label": "Максимално разстояние",
+      "status": {
+        "off": "Изключено"
+      }
+    },
+    "modes": {
+      "label": "Режими"
+    },
+    "reference": {
+      "label": "Референция",
+      "placeholder": "напр. POTA-1234"
+    }
+  },
+  "settings": {
+    "btnSettings": {
+      "label": "Настройки"
+    },
+    "btnBack": {
+      "label": "Назад"
+    },
+    "pageTitle": "Настройки",
+    "refreshInterval": {
+      "label": "Интервал на опресняване",
+      "placeholder": "Минути",
+      "minutes": "min"
+    },
+    "distance": {
+      "label": "Разстояние"
+    },
+    "programsFetch": {
+      "label": "Програми за извличане"
+    },
+    "qth": {
+      "label": "QTH (Grid)",
+      "placeholder": "AB12cd",
+      "status": {
+        "invalidCoordinates": "Невалидни координати",
+        "invalidGrid": "Невалиден Grid",
+        "noQth": "Не е зададен QTH"
+      }
+    },
+    "distanceUnits": {
+      "label": "Мерни единици"
+    },
+    "language": {
+      "label": "Език"
+    },
+    "theme": {
+      "label": "Тема",
+      "themes": {
+        "dark": "Тъмна",
+        "light": "Светла",
+        "system": "Системна"
+      }
+    }
+  },
+  "spots": {
+    "fetch": {
+      "errorDefault": "Възникна грешка при извличането на данни"
+    },
+    "results": {
+      "loading": {
+        "message": "Извличане на данни..."
+      },
+      "noSpots": {
+        "title": "Няма съвпадения с вашите филтри",
+        "message": "Моля, опитайте да разширите филтрите си."
+      },
+      "tableColumns": {
+        "activator": {
+          "label": "Активатор"
+        },
+        "comments": {
+          "label": "Коментари"
+        },
+        "distance": {
+          "label": "Разстояние"
+        },
+        "frequency": {
+          "label": "Честота"
+        },
+        "mode": {
+          "label": "Режим"
+        },
+        "program": {
+          "label": "Програма"
+        },
+        "reference": {
+          "label": "Референция"
+        },
+        "spotter": {
+          "label": "От"
+        },
+        "time": {
+          "label": "Време"
+        }
+      }
+    }
+  }
 }

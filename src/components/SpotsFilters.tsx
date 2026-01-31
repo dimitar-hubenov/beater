@@ -11,6 +11,8 @@ import {
     getDistanceMaxRange, 
     convertDistanceToKm 
 } from '../utils/distance';
+import { useI18n } from '../i18n/useI18n';
+import { formatMinutes } from '../utils/time';
 
 type SpotsFiltersProps = {
     filters: SpotFilters;
@@ -18,6 +20,7 @@ type SpotsFiltersProps = {
 };
 
 export default function SpotsFilters({ filters, actions } : SpotsFiltersProps) {
+    const { t } = useI18n();
     const { settings } = useUserSettings();
     const displayDistance =
         filters.maxDistanceKm == null
@@ -28,13 +31,13 @@ export default function SpotsFilters({ filters, actions } : SpotsFiltersProps) {
             
             {/* ACTIVATOR CALLSIGN */}
             <label className="block text-sm text-(--label-text)">
-                Activator
+                {t('filters.activator.label')}
                 <input
                     id="activator"
                     type="text"
                     value={filters.activator}
                     onChange={e => actions.setActivator(e.target.value)}
-                    placeholder="e.g. LZ1, *ABC, DL*"
+                    placeholder={t('filters.activator.placeholder')}
                     className="
                         mt-1 w-full px-2 py-1 rounded
                         bg-(--input-bg) text-sm text-(--input-text)
@@ -47,13 +50,13 @@ export default function SpotsFilters({ filters, actions } : SpotsFiltersProps) {
             
             {/* REFERENCE */}
             <label className="block text-sm text-(--label-text)">
-                Reference
+                {t('filters.reference.label')}
                 <input
                     id="reference"
                     type="text"
                     value={filters.reference}
                     onChange={e => actions.setReference(e.target.value)}
-                    placeholder="e.g. LZ1, *ABC, DL*"
+                    placeholder={t('filters.reference.placeholder')}
                     className="
                         mt-1 w-full px-2 py-1 rounded
                         bg-(--input-bg) text-sm text-(--input-text)
@@ -66,7 +69,7 @@ export default function SpotsFilters({ filters, actions } : SpotsFiltersProps) {
             
             {/* BAND TOGGLES */}
             <div className="space-y-1">
-                <h3 className="text-sm text-(--label-text)">Bands</h3>
+                <h3 className="text-sm text-(--label-text)">{t('filters.bands.label')}</h3>
                 <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 alpha">
                     {BAND_TOGGLES.map((toggle) => {
                         const isActive = toggle.bands.every(b => filters.bands.includes(b));
@@ -88,7 +91,7 @@ export default function SpotsFilters({ filters, actions } : SpotsFiltersProps) {
             
             {/* MODE TOGGLES */}
             <div className="space-y-1 ">
-                <h3 className="text-sm text-(--label-text)">Modes</h3>
+                <h3 className="text-sm text-(--label-text)">{t('filters.modes.label')}</h3>
                 <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 alpha">
                     {MODE_TOGGLES.map((toggle) => {
                         const isActive = toggle.modes.every(m => filters.modes.includes(m));
@@ -111,11 +114,11 @@ export default function SpotsFilters({ filters, actions } : SpotsFiltersProps) {
             {/* AGE */}
             <div className="space-y-2">
                 <div className="flex items-center justify-between text-sm text-(--label-text)">
-                    <span>Max age</span>
+                    <span>{t('filters.maxAge.label')}</span>
                     <span>
                         {filters.maxAgeMinutes == null
-                            ? 'Off'
-                            : `${filters.maxAgeMinutes} min`}
+                            ? `${t('filters.maxAge.status.off')}`
+                            : `${formatMinutes(filters.maxAgeMinutes)} ${t('filters.maxAge.status.minutes')}`}
                     </span>
                 </div>
 
@@ -140,7 +143,7 @@ export default function SpotsFilters({ filters, actions } : SpotsFiltersProps) {
                     type="number"
                     min={1}
                     max={30}
-                    placeholder="Minutes"
+                    placeholder={t('filters.maxAge.placeholder')}
                     value={filters.maxAgeMinutes ?? ''}
                     onChange={e => {
                         const value = e.target.value;
@@ -162,10 +165,10 @@ export default function SpotsFilters({ filters, actions } : SpotsFiltersProps) {
             {settings.qthLat && settings.qthLon && (
                 <div className="space-y-2">
                     <div className="flex items-center justify-between text-sm text-(--label-text)">
-                        <span>Max distance</span>
+                        <span>{t('filters.maxDistance.label')}</span>
                         <span>
                             {filters.maxDistanceKm == null
-                                ? 'Off'
+                                ? `${t('filters.maxDistance.status.off')}`
                                 : formatDistance(filters.maxDistanceKm, settings.distanceUnit)}
                         </span>
                     </div>

@@ -10,6 +10,7 @@ import { SotaProgram } from '../spotSources/sourceSota';
 import { WwffProgram } from '../spotSources/sourceWwff';
 
 import { resolveReferenceCoordinates } from '../references/referenceStore';
+import { useI18n } from '../i18n/useI18n';
 
 const PROGRAM_PROVIDERS: Record<SpotSource, SpotSourceProvider> = {
     POTA: PotaProgram,
@@ -55,6 +56,7 @@ async function enrichSpotsWithCoordinates(
 }
 
 export function useSpotsData() {
+    const { t } = useI18n();
     const { settings } = useUserSettings();
 
     const [spots, setSpots] = useState<Spot[]>([]);
@@ -92,7 +94,11 @@ export function useSpotsData() {
 
             setSpots(enriched);
         } catch (e) {
-            setError(e as Error);
+            let err = e as Error;
+            if (!(e instanceof Error)) {
+                err = new Error(t('spots.fetch.errorDefault'));
+            }
+            setError(err);
         } finally {
             setLoading(false);
         }
