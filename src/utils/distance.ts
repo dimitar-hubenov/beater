@@ -75,6 +75,7 @@ export function getDistanceValue(valueKm: number, unit: DistanceUnit): number {
     return Math.round(display);
 }
 
-export function formatDistance(valueKm: number, unit: DistanceUnit): string {
+export function formatDistance(valueKm: number | null | undefined, unit: DistanceUnit): string {
+    if (valueKm === null || valueKm === undefined) { return '—'; }
     return `${getDistanceValue(valueKm, unit)} ${getDistanceDisplayUnit(unit)}`;
 }

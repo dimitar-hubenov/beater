@@ -53,7 +53,7 @@ describe('isValidLatitude', () => {
         [90, true],
         [-90, true],
         [89.9999, true],
-    ])('returns true for valid latitude %p', (value, expected) => {
+    ])('returns true for valid latitude %o', (value, expected) => {
         expect(isValidLatitude(value)).toBe(expected);
     });
 
@@ -70,12 +70,12 @@ describe('isValidLatitude', () => {
         [undefined],
         [{}],
         [true],
-    ])('returns false for invalid latitude %p', (value) => {
+    ])('returns false for invalid latitude %o', (value) => {
         expect(isValidLatitude(value)).toBe(false);
     });
 });
 
-describe('isValidLatitude', () => {
+describe('isValidLongitude', () => {
     it.each([
         [0, true],
         [90, true],
@@ -83,7 +83,7 @@ describe('isValidLatitude', () => {
         [180, true],
         [-180, true],
         [179.9999, true],
-    ])('returns true for valid longitude %p', (value, expected) => {
+    ])('returns true for valid longitude %o', (value, expected) => {
         expect(isValidLongitude(value)).toBe(expected);
     });
 
@@ -100,11 +100,10 @@ describe('isValidLatitude', () => {
         [undefined],
         [{}],
         [false],
-    ])('returns false for invalid longitude %p', (value) => {
+    ])('returns false for invalid longitude %o', (value) => {
         expect(isValidLongitude(value)).toBe(false);
     });
 });
-
 
 describe('distance utils', () => {
     it('converts miles to km', () => {
@@ -147,4 +146,16 @@ describe('distance utils', () => {
         expect(getDistanceMaxRange()).toBe(0);
     });
 
+});
+
+describe('formatDistance', () => {
+    it('returns em dash for null or undefined', () => {
+        expect(formatDistance(null, 'km')).toBe('—');
+        expect(formatDistance(undefined, 'mi')).toBe('—');
+    });
+
+    it('formats distance correctly', () => {
+        expect(formatDistance(1234.56, 'km')).toBe('1235 km');
+        expect(formatDistance(804.67, 'mi')).toBe('500 mi');
+    });
 });

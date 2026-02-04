@@ -7,8 +7,11 @@ import { formatTimeAge } from '../utils/time';
 import { useUserSettings } from '../settings/useUserSettings';
 import { sortSpots, getInitialSortConfig, getNextSortDirection, type SortConfig } from '../utils/spotSorting';
 import { formatCallsign } from '../utils/callsign';
-import { DistanceUnit } from '../types/userSettings';
 import { useI18n } from '../i18n/useI18n';
+import { formatDistance } from '../utils/distance';
+import { formatFrequency } from '../utils/frequency';
+import { DistanceUnit } from '../types/userSettings';
+import { Band, BandUtils } from '../types/band';
 
 type Column<T> = {
     key: string;
@@ -82,13 +85,13 @@ export default function SpotsTable({ spots, loading = false }: SpotsTableProps) 
 
     // contant is needed for conditional column
     const distanceColumn: Column<SpotUI> = 
-        { key: 'distance', label: t('spots.results.tableColumns.distance.label'), sortable: true, render: s => formatDistance(s.distanceKm, settings.distanceUnit), align: 'right', className: 'w-1' };
+        { key: 'distance', label: t('spots.results.tableColumns.distance.label'), sortable: true, render: s => formatDistanceWithZone(s.distanceKm, settings.distanceUnit, s.band), align: 'right', className: 'w-1' };
 
     const columns: Column<SpotUI>[] = [
         { key: 'activator', label: t('spots.results.tableColumns.activator.label'), sortable: true, render: s => formatCallsign(s.activator), align: 'center', className: 'font-mono w-1' },
-        { key: 'program', label: t('spots.results.tableColumns.program.label'), sortable: true, render: s => <ProgramBadge program={s.program} />, className: 'w-1' },
-        { key: 'reference', label: t('spots.results.tableColumns.reference.label'), sortable: true, render: s => s.reference, align: 'center', className: 'font-mono w-1' },
-        { key: 'frequency', label: t('spots.results.tableColumns.frequency.label'), sortable: true, render: s => formatFreq(s.frequency), align: 'right', className: 'font-mono w-1' },
+        { key: 'program', label: t('spots.results.tableColumns.program.label'), sortable: true, render: s => formatProgram(s.program), className: 'font-mono w-1' },
+        { key: 'reference', label: t('spots.results.tableColumns.reference.label'), sortable: true, render: s => formatReference(s.reference, s.program), align: 'center', className: 'font-mono w-1' },
+        { key: 'frequency', label: t('spots.results.tableColumns.frequency.label'), sortable: true, render: s => formatFrequency(s.frequency), align: 'right', className: 'font-mono w-1' },
         { key: 'mode', label: t('spots.results.tableColumns.mode.label'), sortable: true, render: s => s.mode, align: 'center', className: 'w-1' },
         ...(showDistance ? [distanceColumn] : []),
         { key: 'time', label: t('spots.results.tableColumns.time.label'), sortable: true, render: s => formatTimeAge(s.time), align: 'right', className: 'w-1 ' },
@@ -173,41 +176,70 @@ export default function SpotsTable({ spots, loading = false }: SpotsTableProps) 
 
 /* ---------- helpers ---------- */
 
-function formatFreq(freq: number | null | undefined): string {
-    if (freq == null || isNaN(freq)) return '—';
-
-    const mhz = Math.floor(freq / 1000);
-    const khzTotal = freq % 1000;
-    const khz = Math.floor(khzTotal);
-    const hundredHz = Math.round((khzTotal - khz) * 10);
-
-    return `${mhz}.${khz.toString().padStart(3, '0')}.${hundredHz}`;
-}
-
-function formatDistance(
-    distanceKm: number | null | undefined,
-    unit: DistanceUnit,
-): string {
-    if (distanceKm == null) return '—';
-    if (unit === 'mi') {
-        return `${(distanceKm * 0.621371).toFixed(0)} mi`;
-    }
-
-    return `${distanceKm.toFixed(0)} km`;
-}
-
-function ProgramBadge({ program }: { program: SpotSource }) {
-    const colors = {
-        POTA: 'bg-green-700',
-        SOTA: 'bg-blue-700',
-        WWFF: 'bg-purple-700',
+function formatProgram(program: SpotSource): ReactNode {
+    
+    const programClassMap: Record<SpotSource | 'unknown', string> = {
+        POTA: 'program-badge-pota',
+        SOTA: 'program-badge-sota',
+        WWFF: 'program-badge-wwff',
+        unknown: 'program-badge-unknown',
     };
 
+    const cls = programClassMap[program] ?? programClassMap.unknown;
+
     return (
-        <span
-            className={`px-2 py-0.5 rounded text-xs text-white font-mono ${colors[program] ?? 'bg-gray-600'}`}
-        >
+        <span className={`px-1 py-0.5 rounded text-xs ${cls}`}>
             {program}
         </span>
     );
 }
+
+function formatReference(reference: string | null | undefined, program: SpotSource): ReactNode {
+    if (reference == null) return '—';
+
+    let url: string;
+
+    switch (program) {
+        case 'POTA':
+            url = `https://pota.app/#/park/${encodeURIComponent(reference)}`;
+            break;
+        case 'SOTA':
+            url = `https://sotadata.org.uk/en/summit/${reference}`;
+            break;
+        case 'WWFF':
+            url = '';
+            // wwff use wordpress and doesn't provide direct links to references
+            // url = `https://wwff.co/directory/?ref=${encodeURIComponent(reference)}`;
+            break;
+    }
+
+    if (url) {
+        return (
+            <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+            >
+                {reference}
+            </a>
+        );
+    }
+    // fallback
+    return <span className="text-gray-500">{reference}</span>;
+}
+
+function formatDistanceWithZone(
+    distanceKm: number | null | undefined, 
+    unit: DistanceUnit,
+    band: Band
+): ReactNode {
+    const displayText = formatDistance(distanceKm, unit);
+    const zone = BandUtils.getDistanceZone(distanceKm, band);
+
+    return (
+        <span className={`distance-${zone}`}>
+            {displayText}
+        </span>
+    );
+};

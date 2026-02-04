@@ -49,6 +49,18 @@
     --color-success: #16a34a;
     --color-warning: #ca8a04;
     --color-danger: #dc2626;
+
+    --program-pota-bg: var(--color-green-700);
+    --program-sota-bg: var(--color-blue-700);
+    --program-wwff-bg: var(--color-purple-700);
+    --program-unknown-bg: var(--color-gray-700);
+
+    --distance-unknown: #9CA3AF;
+    --distance-skip: #3B82F6;
+    --distance-near: #22C55E;
+    --distance-medium: #EAB308;
+    --distance-far: #EF4444;
+
 }
 
 .dark {
@@ -97,4 +109,53 @@
     --color-success: #22c55e;
     --color-warning: #eab308;
     --color-danger: #ef4444;
+
+    --program-pota-bg: var(--color-green-600);
+    --program-sota-bg: var(--color-blue-600);
+    --program-wwff-bg: var(--color-purple-600);
+    --program-unknown-bg: var(--color-gray-600);
+
+    --distance-unknown: #9CA3AF;
+    --distance-skip: #60A5FA;
+    --distance-near: #4ADE80;
+    --distance-medium: #FACC15;
+    --distance-far: #F87171;
+}
+
+/* Program Badges */
+.program-badge-pota {
+    background-color: var(--program-pota-bg);
+}
+
+.program-badge-sota {
+    background-color: var(--program-sota-bg);
+}
+
+.program-badge-wwff {
+    background-color: var(--program-wwff-bg);
+}
+
+.program-badge-unknown {
+    background-color: var(--program-unknown-bg);
+}
+
+/* Distance Zone Text Colors */
+.distance-unknown {
+    color: var(--distance-unknown);
+}
+
+.distance-skip {
+    color: var(--distance-skip);
+}
+
+.distance-near {
+    color: var(--distance-near);
+}
+
+.distance-medium {
+    color: var(--distance-medium);
+}
+
+.distance-far {
+    color: var(--distance-far);
 }
