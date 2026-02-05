@@ -1,87 +1,91 @@
 # Beater
 
-### Beater — Chase activators with confidence
+### Beater — Chase portable activators with confidence
 
-Beater is a modern web application for radio amateurs who participate in portable activation programs such as POTA, SOTA, WWFF, and similar schemes.
+**Beater** is a modern web application for radio amateurs who participate in portable activation programs such as POTA, SOTA, WWFF, and similar schemes.
 
 It focuses on fast spot visualization, smart filtering, and practical information that helps hunters and activators make better decisions in real time.
 
-## 🚀 Why Beater?
+---
+
+## Why Beater?
 
 Most spotting tools show raw lists of spots.
 
 Beater goes a step further by adding context, classification, and meaning to each spot:
 
 - What band is it on?
-
 - How far is it from me?
-
 - Is this likely a local contact, medium-range, or long-haul?
-
 - Which programs are currently active?
 
 The goal is to reduce noise and surface what actually matters.
 
-## ✨ Key Features
+---
 
-### 🔎 Smart Spot Table
+## Key Features
 
-- Live display of spots from multiple programs
+### Smart Spot Table
 
-- Clear, compact table layout
+- Live display of spots from multiple programs  
+- Clear, compact table layout  
+- Human-friendly formatting for frequency and distance  
 
-- Human-friendly formatting for frequency and distance
+### Band Detection
 
-### 📡 Band Detection
+- Automatic band detection from frequency  
+- Support for HF, VHF, and UHF bands  
+- Fallback band for unknown or unsupported frequencies  
 
-- Automatic band detection from frequency
+### Distance & Propagation Zones
 
-- Support for HF, VHF, and UHF bands
+Each spot is classified into distance zones per band:
 
-- Fallback band for unknown or unsupported frequencies
-
-### 📏 Distance & Propagation Zones
-
-- Each spot is classified into distance zones per band:
-
-- Skip – first-hop skip zone
-
-- Near – easy/local contacts
-
-- Medium – moderate distance
-
-- Far – long-distance / DX
+- **Skip** – first-hop skip zone  
+- **Near** – easy / local contacts  
+- **Medium** – moderate distance  
+- **Far** – long-distance / DX  
 
 Color-coded visualization makes interpretation instant.
 
-### 🎚 Band Toggles
+### Band Toggles
 
-- Bands are grouped into logical toggles
+- Bands grouped into logical toggles  
+- Enable/disable entire groups with one click  
+- Keeps UI clean even with many bands  
 
-- Enable/disable entire groups with one click
+### Localization (i18n)
 
-- Keeps UI clean even with many bands
-
-### 🌍 Localization (i18n)
-
-- Built-in localization system
-
+- Built-in localization system  
 - Currently supports:
+  - English  
+  - Bulgarian  
 
-  - English
-  - Bulgarian
+Easy to extend with additional languages.
 
-Easy to extend with additional languages
+### User Settings
 
-### ⚙ User Settings
+- Preferred language  
+- Distance unit (km / mi)  
+- Persistently stored  
 
-- Preferred language
+---
 
-- Distance unit (km / mi)
+## Getting Started
 
-- Stored persistently
+```bash
+npm install
+npm run dev
+```
 
-## 🤝 Contributing
+Then open:
+```bash
+http://localhost:5173
+```
+
+---
+
+## Contributing
 
 Contributions are welcome!
 
@@ -95,11 +99,16 @@ If you want to help:
 
 4. Open a pull request
 
-## 📜 License
+## License
 
-MIT
+**Beater** is licensed under the GNU General Public License v3.0.
 
-## 🙌 Philosophy
+You are free to use, study, modify, and distribute this software under
+the terms of the GPL-3.0 license.
+
+See the LICENSE file for details.
+
+## Philosophy
 
 **Beater** is built by a radio amateur, for radio amateurs.
 
