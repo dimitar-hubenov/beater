@@ -1,7 +1,7 @@
 {
-  "name": "pota-spot-viewer",
+  "name": "beater",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -42,9 +42,19 @@
     "vite": "^7.3.0",
     "vitest": "^4.0.18"
   },
-  "description": "Мinimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "eslint.config.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "description": "Advanced filtering and visualization tool for amateur radio portable activation programs such as POTA, SOTA, and WWFF.",
+  "keywords": [
+    "hamradio",
+    "pota",
+    "sota",
+    "wwff",
+    "amateur-radio",
+    "ham",
+    "spotter",
+    "viewer",
+    "dx",
+    "portable"
+  ],
+  "author": "Dimitar Hubenov, LZ1DHB",
+  "license": "GPL-3.0-or-later"
 }
