@@ -8,6 +8,7 @@ import type {
 } from './types'
 import type { SpotSource } from '../types/spotSource'
 import type { Spot } from '../types/spot'
+import { publicUrl } from '../utils/url';
 
 /**
  * Internal caches (lazy-loaded)
@@ -26,7 +27,7 @@ async function loadPotaMap(): Promise<void> {
     if (potaLoading) return potaLoading
 
     potaLoading = (async () => {
-        const response = await fetch('/data/pota-references.json')
+        const response = await fetch(publicUrl('/data/pota-references.json'))
         if (!response.ok) {
             throw new Error('Failed to load POTA reference data')
         }
@@ -55,7 +56,7 @@ async function loadSotaMap(): Promise<void> {
     if (sotaLoading) return sotaLoading
 
     sotaLoading = (async () => {
-        const response = await fetch('/data/sota-references.json')
+        const response = await fetch(publicUrl('/data/sota-references.json'))
         if (!response.ok) {
             throw new Error('Failed to load SOTA reference data')
         }
