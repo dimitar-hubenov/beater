@@ -1,6 +1,6 @@
 // src/layouts/SpotsLayout.tsx
 
-import { useState, useEffect, ReactNode } from 'react';
+import { useState, ReactNode } from 'react';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 import { useI18n } from '../i18n/useI18n';
 
@@ -11,38 +11,35 @@ type SpotsLayoutProps = {
 
 export default function SpotsLayout({ filters, content }: SpotsLayoutProps) {
     const { t } = useI18n();
-    const isDesktop = useMediaQuery('(min-width: 768px)');
-    const [filtersOpen, setFiltersOpen] = useState(isDesktop);
-
-    // Sync when switching between mobile / desktop
-    useEffect(() => {
-        setFiltersOpen(isDesktop);
-    }, [isDesktop]);
+    // Unified visibility state: panel hidden by default, togglable on all devices
+    const [filtersOpen, setFiltersOpen] = useState(false);
 
     return (
         <div className="h-full flex overflow-hidden bg-(--bg-primary) text-(--text-primary)">
             {/* Mobile overlay */}
-            {filtersOpen && !isDesktop && (
-                <div
-                    className="fixed inset-0 bg-black/50 z-10"
-                    onClick={() => setFiltersOpen(false)}
-                />
+            {filtersOpen && (
+                <div className="md:hidden">
+                    <div
+                        className="fixed inset-0 bg-black/50 z-10"
+                        onClick={() => setFiltersOpen(false)}
+                    />
+                </div>
             )}
 
             {/* Filters panel */}
             {filtersOpen && (
-                <aside
+                <aside id="filters-panel"
                     className="
                         w-80 shrink-0
                         bg-(--bg-panel)
                         border-r border-(--border)
                         fixed inset-y-0 left-0 z-30
                         md:static md:z-auto
-                        overflow-y-auto
+                        flex flex-col h-full overflow-y-auto
                     "
                 >
                     {/* Mobile close header */}
-                    {!isDesktop && (
+                    {(
                         <div
                             className="
                                 sticky top-0 z-10
@@ -74,7 +71,7 @@ export default function SpotsLayout({ filters, content }: SpotsLayoutProps) {
             {/* Main results area */}
             <div className="flex-1 flex flex-col overflow-hidden">
                 {/* Mobile filters button */}
-                {!isDesktop && (
+                { !filtersOpen && (
                     <div
                         className="
                             sticky top-0 z-10
@@ -91,6 +88,8 @@ export default function SpotsLayout({ filters, content }: SpotsLayoutProps) {
                                 hover:bg-(--bg-btn-hover)
                                 transition
                             "
+                            aria-expanded={filtersOpen}
+                            aria-controls="filters-panel"
                         >
                             ☰ {t('filters.btnFilters.label')}
                         </button>
