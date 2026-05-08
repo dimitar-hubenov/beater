@@ -2,8 +2,8 @@
   "meta": {
     "program": "POTA",
     "source": "https://pota.app/all_parks_ext.csv",
-    "generatedAt": "2026-04-13T05:37:23.097Z",
-    "count": 86521
+    "generatedAt": "2026-05-04T06:07:41.629Z",
+    "count": 86882
   },
   "items": [
     {
@@ -3931,6 +3931,24 @@
       "longitude": -72.1667
     },
     {
+      "reference": "AR-0421",
+      "name": "Paisaje protegido Lago Urugua-í Nature Reserve",
+      "latitude": -25.9,
+      "longitude": -54.6167
+    },
+    {
+      "reference": "AR-0422",
+      "name": "Parque provincial Moconá Provincial Park",
+      "latitude": -27.1534,
+      "longitude": -53.9022
+    },
+    {
+      "reference": "AR-0423",
+      "name": "Reserva biprovincial Mocoretá Nature Reserve",
+      "latitude": -30.6565,
+      "longitude": -57.9619
+    },
+    {
       "reference": "AS-0001",
       "name": "American Samoa National Park",
       "latitude": -14.259,
@@ -6085,12 +6103,6 @@
       "longitude": 14.3678
     },
     {
-      "reference": "AT-0364",
-      "name": "Gurina Landscape Reserve",
-      "latitude": 46.6667,
-      "longitude": 13.0853
-    },
-    {
       "reference": "AT-0365",
       "name": "Wollanig – Oswaldiberg Landscape Reserve",
       "latitude": 46.6536,
@@ -6281,6 +6293,18 @@
       "name": "Schutzgebiet Kaisergebirge Protected Area",
       "latitude": 47.5791,
       "longitude": 12.2797
+    },
+    {
+      "reference": "AT-0397",
+      "name": "Europaschutzgebiet Unter-Ueberlut Protected Area",
+      "latitude": 47.2514,
+      "longitude": 9.97134
+    },
+    {
+      "reference": "AT-0398",
+      "name": "UNESCO Biosphärenpark Großes Walsertal UNESCO Geopark",
+      "latitude": 47.2325,
+      "longitude": 9.91308
     },
     {
       "reference": "AU-0002",
@@ -18878,7 +18902,7 @@
     },
     {
       "reference": "AU-11013",
-      "name": "Goondiwindi War Memorial National Park",
+      "name": "Goondiwindi War Memorial State Historical Monument",
       "latitude": -28.5459,
       "longitude": 150.302
     },
@@ -20083,10 +20107,76 @@
       "longitude": 145.649
     },
     {
+      "reference": "AU-11197",
+      "name": "Clohesy National Wild and Scenic River",
+      "latitude": -16.9233,
+      "longitude": 145.588
+    },
+    {
+      "reference": "AU-11198",
+      "name": "Mowbray National Wild and Scenic River",
+      "latitude": -16.5529,
+      "longitude": 145.481
+    },
+    {
+      "reference": "AU-11199",
+      "name": "Geographical Centre of NSW Historic Site",
+      "latitude": -32.1629,
+      "longitude": 147.032
+    },
+    {
       "reference": "AU-1120",
       "name": "Plunkett Conservation Park",
       "latitude": -27.8223,
       "longitude": 153.161
+    },
+    {
+      "reference": "AU-11200",
+      "name": "Little Weir National Wild and Scenic River",
+      "latitude": -28.9338,
+      "longitude": 148.968
+    },
+    {
+      "reference": "AU-11201",
+      "name": "Duckies State Beach",
+      "latitude": -32.715,
+      "longitude": 152.151
+    },
+    {
+      "reference": "AU-11202",
+      "name": "Halifax State Beach",
+      "latitude": -32.7108,
+      "longitude": 152.159
+    },
+    {
+      "reference": "AU-11204",
+      "name": "Cameron's 1 Ton Survey Post State Historic Site",
+      "latitude": -28.999,
+      "longitude": 148.958
+    },
+    {
+      "reference": "AU-11205",
+      "name": "Mehi National Wild and Scenic River",
+      "latitude": -29.4702,
+      "longitude": 149.843
+    },
+    {
+      "reference": "AU-11206",
+      "name": "Back Creek State Forest",
+      "latitude": -33.8738,
+      "longitude": 147.358
+    },
+    {
+      "reference": "AU-11207",
+      "name": "Mungabarenna reserve Historic Site",
+      "latitude": -36.0902,
+      "longitude": 146.954
+    },
+    {
+      "reference": "AU-11208",
+      "name": "Howlong Hovell Tree Historic Site",
+      "latitude": -36.0849,
+      "longitude": 146.909
     },
     {
       "reference": "AU-1121",
@@ -74449,6 +74539,12 @@
       "longitude": 17.7063
     },
     {
+      "reference": "BA-0193",
+      "name": "Sahat kula Tešanj National Monument",
+      "latitude": 44.6141,
+      "longitude": 17.9883
+    },
+    {
       "reference": "BB-0001",
       "name": "Queens National Park",
       "latitude": 13.0984,
@@ -74711,6 +74807,12 @@
       "name": "Foul Bay Coastal Park",
       "latitude": 13.1012,
       "longitude": -59.4506
+    },
+    {
+      "reference": "BB-0046",
+      "name": "Brandons Beach Coastal Park",
+      "latitude": 13.1199,
+      "longitude": -59.6291
     },
     {
       "reference": "BD-0001",
@@ -78379,6 +78481,24 @@
       "longitude": 4.39177
     },
     {
+      "reference": "BE-0558",
+      "name": "Frasnes-les-bassins National Park",
+      "latitude": 50.6689,
+      "longitude": 3.61438
+    },
+    {
+      "reference": "BE-0559",
+      "name": "Domein van Kwabeek National Park",
+      "latitude": 50.8295,
+      "longitude": 4.82551
+    },
+    {
+      "reference": "BE-0560",
+      "name": "West-Vlaamse Scheldemeersen National Park",
+      "latitude": 50.8008,
+      "longitude": 3.51498
+    },
+    {
       "reference": "BF-0001",
       "name": "Kabore-Tambi National Park",
       "latitude": 11.52,
@@ -78981,8 +79101,8 @@
     {
       "reference": "BG-0098",
       "name": "Pliska National Historic Site",
-      "latitude": 43.3987,
-      "longitude": 27.1389
+      "latitude": 43.3878,
+      "longitude": 27.1311
     },
     {
       "reference": "BG-0099",
@@ -79457,6 +79577,24 @@
       "name": "Srebarna National Park Reserve",
       "latitude": 44.1114,
       "longitude": 27.0733
+    },
+    {
+      "reference": "BG-0178",
+      "name": "Prista Recreation Park",
+      "latitude": 43.8042,
+      "longitude": 25.9176
+    },
+    {
+      "reference": "BG-0179",
+      "name": "Kaliakra Natura 2000",
+      "latitude": 43.4183,
+      "longitude": 28.5083
+    },
+    {
+      "reference": "BG-0180",
+      "name": "Komin dere - Laki National Scenic Trail",
+      "latitude": 41.8454,
+      "longitude": 24.8283
     },
     {
       "reference": "BH-0001",
@@ -85411,6 +85549,12 @@
       "longitude": 24.7992
     },
     {
+      "reference": "BW-0008",
+      "name": "The Khwai Community Concession Conservation Area",
+      "latitude": -19.1163,
+      "longitude": 23.8657
+    },
+    {
       "reference": "BY-0001",
       "name": "Белавежская пушча National Park",
       "latitude": 52.5855,
@@ -86261,6 +86405,12 @@
       "name": "Калона ў гонар прыняцця Канстытуцыі 1791 года Historic Site",
       "latitude": 55.8046,
       "longitude": 27.8044
+    },
+    {
+      "reference": "BY-0143",
+      "name": "Копцеўская озавая града Landscape Reserve",
+      "latitude": 55.4615,
+      "longitude": 28.2465
     },
     {
       "reference": "BZ-0001",
@@ -118909,12 +119059,6 @@
       "longitude": -82.9807
     },
     {
-      "reference": "CA-5948",
-      "name": "Hart Massey House National Historic Site",
-      "latitude": 45.4513,
-      "longitude": -75.6719
-    },
-    {
       "reference": "CA-5949",
       "name": "Embro Conservation Area",
       "latitude": 43.1733,
@@ -121879,12 +122023,6 @@
       "longitude": -65.3046
     },
     {
-      "reference": "CA-6473",
-      "name": "Former Intercolonial Railway (ICR) Station Historic Site",
-      "latitude": 45.7226,
-      "longitude": -65.5129
-    },
-    {
       "reference": "CA-6475",
       "name": "St. John River National Heritage Area",
       "latitude": 45.9954,
@@ -122501,6 +122639,12 @@
       "name": "Grand Barachois Nature Reserve",
       "latitude": 46.2352,
       "longitude": -64.4318
+    },
+    {
+      "reference": "CA-6585",
+      "name": "Memramcook War Memorial National Monument",
+      "latitude": 45.9797,
+      "longitude": -64.5466
     },
     {
       "reference": "CC-0001",
@@ -127157,6 +127301,12 @@
       "name": "Quebrada ojo de apache Sanctuary",
       "latitude": -22.4861,
       "longitude": -69.0164
+    },
+    {
+      "reference": "CL-0415",
+      "name": "FARO MONUMENTAL DE LA SERENA National Historical Site",
+      "latitude": -29.9056,
+      "longitude": -71.2743
     },
     {
       "reference": "CM-0001",
@@ -135991,6 +136141,12 @@
       "longitude": 108.857
     },
     {
+      "reference": "CN-1466",
+      "name": "江苏盐城梅花湾 Scenic Site",
+      "latitude": 33.2241,
+      "longitude": 120.422
+    },
+    {
       "reference": "CO-0001",
       "name": "Los Estoraques Natural Area",
       "latitude": 8.20585,
@@ -137719,12 +137875,6 @@
       "longitude": -76.0578
     },
     {
-      "reference": "CO-0291",
-      "name": "PARQUE ECOLÓGICO LOS SALADOS Aquatic Reserve",
-      "latitude": 6.10865,
-      "longitude": -75.4988
-    },
-    {
       "reference": "CO-0292",
       "name": "Rio Rucio National Forest",
       "latitude": 4.57156,
@@ -139163,6 +139313,18 @@
       "name": "Centro Recreacional Puertas Del Sol Recreation Park",
       "latitude": 1.48325,
       "longitude": -77.3222
+    },
+    {
+      "reference": "CO-0533",
+      "name": "Los Alcazares​ Arenillo Ecological Park",
+      "latitude": 5.06598,
+      "longitude": -75.531
+    },
+    {
+      "reference": "CO-0534",
+      "name": "Monumento a los Colonizadores Historic Site",
+      "latitude": 5.07699,
+      "longitude": -75.5279
     },
     {
       "reference": "CR-0001",
@@ -141399,8 +141561,8 @@
     {
       "reference": "CY-0004",
       "name": "Polemidia National Forest",
-      "latitude": 34.7119,
-      "longitude": 33.002
+      "latitude": 34.7139,
+      "longitude": 33.006
     },
     {
       "reference": "CY-0005",
@@ -141602,15 +141764,15 @@
     },
     {
       "reference": "CY-0039",
-      "name": "Cape Gkreko Marine Protected Area",
-      "latitude": 34.9583,
-      "longitude": 34.0865
+      "name": "Cape Gkreko SPA Natura 2000",
+      "latitude": 34.9785,
+      "longitude": 34.0596
     },
     {
       "reference": "CY-0040",
       "name": "Nisia Marine area Marine Protected Area",
-      "latitude": 35.0004,
-      "longitude": 34.0669
+      "latitude": 35.005,
+      "longitude": 34.0779
     },
     {
       "reference": "CY-0041",
@@ -142351,6 +142513,12 @@
       "longitude": 32.3865
     },
     {
+      "reference": "CY-0169",
+      "name": "Sotira Forest National Park",
+      "latitude": 35.0102,
+      "longitude": 33.9679
+    },
+    {
       "reference": "CZ-0001",
       "name": "Šumava National Park",
       "latitude": 48.9616,
@@ -142757,6 +142925,12 @@
       "name": "Pařezitý Nature Monument",
       "latitude": 49.7597,
       "longitude": 14.184
+    },
+    {
+      "reference": "CZ-0069",
+      "name": "Čertova zeď National Monument",
+      "latitude": 50.673,
+      "longitude": 14.945
     },
     {
       "reference": "CZ-0070",
@@ -143414,9 +143588,9 @@
     },
     {
       "reference": "CZ-0179",
-      "name": "U Vinic Nature Park",
-      "latitude": 49.961,
-      "longitude": 16.19
+      "name": "Bošínská obora Nature Reserve",
+      "latitude": 50.029,
+      "longitude": 16.199
     },
     {
       "reference": "CZ-0180",
@@ -143555,6 +143729,84 @@
       "name": "Sivický les (EVL) Natura 2000",
       "latitude": 49.211,
       "longitude": 16.758
+    },
+    {
+      "reference": "CZ-0203",
+      "name": "Údolí Otavy a Vltavy Natura 2000",
+      "latitude": 49.431,
+      "longitude": 14.181
+    },
+    {
+      "reference": "CZ-0204",
+      "name": "Údolí Oslavy a Chvojnice (EVL) Natura 2000",
+      "latitude": 49.147,
+      "longitude": 16.232
+    },
+    {
+      "reference": "CZ-0205",
+      "name": "Psí kuchyně Nature Reserve",
+      "latitude": 49.848,
+      "longitude": 16.447
+    },
+    {
+      "reference": "CZ-0206",
+      "name": "Jedlový les a údolí Rokytné Natura 2000",
+      "latitude": 49.048,
+      "longitude": 15.963
+    },
+    {
+      "reference": "CZ-0207",
+      "name": "Heřmanický rybník Natura 2000",
+      "latitude": 49.874,
+      "longitude": 18.34
+    },
+    {
+      "reference": "CZ-0208",
+      "name": "Na Plachtě Nature Monument",
+      "latitude": 50.187,
+      "longitude": 15.857
+    },
+    {
+      "reference": "CZ-0209",
+      "name": "Na Plachtě 3 Natural Monument",
+      "latitude": 50.189,
+      "longitude": 15.855
+    },
+    {
+      "reference": "CZ-0210",
+      "name": "Luční údolí Natura 2000",
+      "latitude": 49.318,
+      "longitude": 16.745
+    },
+    {
+      "reference": "CZ-0211",
+      "name": "Kačina Nature Monument",
+      "latitude": 49.984,
+      "longitude": 15.346
+    },
+    {
+      "reference": "CZ-0212",
+      "name": "Mydlovarský luh Nature Reserve",
+      "latitude": 50.171,
+      "longitude": 14.918
+    },
+    {
+      "reference": "CZ-0213",
+      "name": "Úpor - Černínovsko Nature Reserve",
+      "latitude": 50.3,
+      "longitude": 14.495
+    },
+    {
+      "reference": "CZ-0214",
+      "name": "Hněvošický háj Nature Reserve",
+      "latitude": 50,
+      "longitude": 17.99
+    },
+    {
+      "reference": "CZ-0215",
+      "name": "Zhejral National Monument",
+      "latitude": 49.215,
+      "longitude": 15.314
     },
     {
       "reference": "DE-0001",
@@ -150949,6 +151201,24 @@
       "longitude": 9.25962
     },
     {
+      "reference": "DE-1243",
+      "name": "Hinüberscher Garten National Historical Park",
+      "latitude": 52.4085,
+      "longitude": 9.63103
+    },
+    {
+      "reference": "DE-1244",
+      "name": "Isarradweg National Scenic Trail",
+      "latitude": 48.3695,
+      "longitude": 11.7325
+    },
+    {
+      "reference": "DE-1245",
+      "name": "Fernwanderweg Görlitz-Greiz National Scenic Trail",
+      "latitude": 50.8054,
+      "longitude": 13.6686
+    },
+    {
       "reference": "DJ-0001",
       "name": "iles de septe freres Biological Reserve",
       "latitude": 12.464,
@@ -152752,7 +153022,7 @@
       "reference": "DM-0008",
       "name": "Coconut Beach Coastal Park",
       "latitude": 15.5528,
-      "longitude": -61.463
+      "longitude": -61.4632
     },
     {
       "reference": "DM-0009",
@@ -152769,14 +153039,14 @@
     {
       "reference": "DM-0012",
       "name": "Salisbury Beach Coastal Park",
-      "latitude": 15.4358,
+      "latitude": 15.4337,
       "longitude": -61.4369
     },
     {
       "reference": "DM-0013",
       "name": "Picard Beach Coastal Park",
-      "latitude": 15.5528,
-      "longitude": -61.463
+      "latitude": 15.5539,
+      "longitude": -61.4622
     },
     {
       "reference": "DM-0014",
@@ -160364,7 +160634,7 @@
     },
     {
       "reference": "ES-0825",
-      "name": "Reserva Natural de Los Galachos de La Alfranca de Pastriz, La Cartuja y El Burgo de Ebro Natura 2000",
+      "name": "Los Galachos de La Alfranca de Pastriz, La Cartuja y El Burgo de Ebro Natura 2000",
       "latitude": 41.5978,
       "longitude": -0.765
     },
@@ -166371,8 +166641,8 @@
     {
       "reference": "ES-1832",
       "name": "Camino de Santiago-Manchego National Recreation Trail",
-      "latitude": 38.3445,
-      "longitude": -0.493317
+      "latitude": 39.6017,
+      "longitude": -3.8532
     },
     {
       "reference": "ES-1833",
@@ -170101,208 +170371,202 @@
       "longitude": -1.15
     },
     {
-      "reference": "ES-2466",
-      "name": "Lagunas de Soto de Mozanaque Wetland Reserve",
-      "latitude": 40.5989,
-      "longitude": -3.5378
-    },
-    {
       "reference": "ES-2467",
       "name": "Las Huelgas Wetland Reserve",
-      "latitude": 40.5843,
-      "longitude": -3.5249
+      "latitude": 40.6242,
+      "longitude": -3.56316
     },
     {
       "reference": "ES-2468",
       "name": "Canteras y encharcamientos de Alpedrete Wetland Reserve",
-      "latitude": 40.6543,
-      "longitude": -4.0182
+      "latitude": 40.6683,
+      "longitude": -4.01556
     },
     {
       "reference": "ES-2469",
       "name": "Humedal del Carrizal de Villamejor Wetland Reserve",
-      "latitude": 39.9328,
-      "longitude": -3.8114
+      "latitude": 39.9334,
+      "longitude": -3.80601
     },
     {
       "reference": "ES-2470",
       "name": "Laguna de Soto de las Cuevas Wetland Reserve",
-      "latitude": 40.045,
-      "longitude": -3.585
+      "latitude": 40.0962,
+      "longitude": -3.61143
     },
     {
       "reference": "ES-2471",
       "name": "Mar de Ontígola Wetland Reserve",
-      "latitude": 39.9867,
-      "longitude": -3.5936
+      "latitude": 40.0185,
+      "longitude": -3.5993
     },
     {
       "reference": "ES-2472",
       "name": "Soto del Lugar Wetland Reserve",
-      "latitude": 40.0469,
-      "longitude": -3.5786
+      "latitude": 40.0388,
+      "longitude": -3.61279
     },
     {
       "reference": "ES-2473",
       "name": "Lagunas de las Madres Wetland Reserve",
-      "latitude": 40.2965,
-      "longitude": -3.5147
+      "latitude": 40.2984,
+      "longitude": -3.51474
     },
     {
       "reference": "ES-2474",
       "name": "Prado del Toril Wetland Reserve",
-      "latitude": 40.598,
-      "longitude": -3.523
+      "latitude": 40.6679,
+      "longitude": -4.20703
     },
     {
       "reference": "ES-2475",
       "name": "Prado de Navasaces Wetland Reserve",
-      "latitude": 40.6135,
-      "longitude": -3.5118
+      "latitude": 40.8664,
+      "longitude": -3.75906
     },
     {
       "reference": "ES-2476",
       "name": "La Alberca Wetland Reserve",
-      "latitude": 40.2522,
-      "longitude": -4.4314
+      "latitude": 40.2795,
+      "longitude": -4.47004
     },
     {
       "reference": "ES-2477",
       "name": "Laguna de Casasola Wetland Reserve",
-      "latitude": 40.1706,
-      "longitude": -3.4981
+      "latitude": 40.1617,
+      "longitude": -3.48434
     },
     {
       "reference": "ES-2478",
       "name": "Las Carboneras Wetland Reserve",
-      "latitude": 40.2311,
-      "longitude": -3.5414
+      "latitude": 40.6965,
+      "longitude": -3.8197
     },
     {
       "reference": "ES-2479",
       "name": "La Chanta Wetland Reserve",
-      "latitude": 40.4431,
-      "longitude": -3.2982
+      "latitude": 40.407,
+      "longitude": -3.26929
     },
     {
       "reference": "ES-2480",
       "name": "Lagunas de Castrejón Wetland Reserve",
-      "latitude": 40.5367,
-      "longitude": -4.1458
+      "latitude": 40.5386,
+      "longitude": -4.14739
     },
     {
       "reference": "ES-2481",
       "name": "Lagunas de Horna Wetland Reserve",
-      "latitude": 40.3092,
-      "longitude": -3.66019
+      "latitude": 40.3087,
+      "longitude": -3.66024
     },
     {
       "reference": "ES-2482",
       "name": "Charcas de Los Camorchos Wetland Reserve",
-      "latitude": 40.5971,
-      "longitude": -3.92047
+      "latitude": 40.5967,
+      "longitude": -3.92074
     },
     {
       "reference": "ES-2483",
       "name": "Laguna de Matatorejo Wetland Reserve",
-      "latitude": 40.8558,
-      "longitude": -3.6317
+      "latitude": 40.8574,
+      "longitude": -3.6212
     },
     {
       "reference": "ES-2484",
       "name": "Lagunilla del Lomo Wetland Reserve",
-      "latitude": 40.7893,
-      "longitude": -3.85605
+      "latitude": 40.7839,
+      "longitude": -3.84956
     },
     {
       "reference": "ES-2485",
       "name": "Ventisquero de la Condesa Wetland Reserve",
-      "latitude": 40.7939,
-      "longitude": -3.9725
+      "latitude": 40.7863,
+      "longitude": -3.97656
     },
     {
       "reference": "ES-2486",
       "name": "Lagunas de la Presa del río Henares Wetland Reserve",
-      "latitude": 40.4028,
-      "longitude": -3.48472
+      "latitude": 40.4098,
+      "longitude": -3.49445
     },
     {
       "reference": "ES-2487",
       "name": "Laguna del Gato Wetland Reserve",
-      "latitude": 40.6551,
-      "longitude": -3.99203
+      "latitude": 40.6611,
+      "longitude": -3.97041
     },
     {
       "reference": "ES-2488",
       "name": "Lagunas de Belvis Wetland Reserve",
-      "latitude": 40.5291,
-      "longitude": -3.54571
+      "latitude": 40.55,
+      "longitude": -3.55983
     },
     {
       "reference": "ES-2489",
       "name": "Enclaves higroturbosos del arroyo Valhondillo Wetland Reserve",
-      "latitude": 40.81,
-      "longitude": -3.91194
+      "latitude": 40.8051,
+      "longitude": -3.90725
     },
     {
       "reference": "ES-2490",
       "name": "Humedales del Macizo de Peñalara Wetland Reserve",
-      "latitude": 40.8366,
-      "longitude": -3.9514
+      "latitude": 40.8604,
+      "longitude": -3.94749
     },
     {
       "reference": "ES-2491",
       "name": "Trampal de El Reventón Wetland Reserve",
-      "latitude": 40.8878,
-      "longitude": -3.87114
+      "latitude": 40.8942,
+      "longitude": -3.9509
     },
     {
       "reference": "ES-2492",
       "name": "El Porcal Wetland Reserve",
-      "latitude": 40.3078,
-      "longitude": -3.5125
+      "latitude": 40.3203,
+      "longitude": 40.3203
     },
     {
       "reference": "ES-2493",
       "name": "Laguna del Campillo Wetland Reserve",
-      "latitude": 40.3127,
-      "longitude": -3.5017
+      "latitude": 40.3203,
+      "longitude": -3.50467
     },
     {
       "reference": "ES-2494",
       "name": "Laguna de Soto de las Juntas Wetland Reserve",
-      "latitude": 40.3081,
-      "longitude": -3.52928
+      "latitude": 40.3122,
+      "longitude": -3.52931
     },
     {
       "reference": "ES-2495",
       "name": "Los Albardales Wetland Reserve",
-      "latitude": 40.22,
-      "longitude": -3.56556
+      "latitude": 40.2209,
+      "longitude": -3.56488
     },
     {
       "reference": "ES-2496",
       "name": "Encharcamientos del arroyo Guatén Wetland Reserve",
-      "latitude": 40.1873,
-      "longitude": -3.7468
+      "latitude": 40.1827,
+      "longitude": -3.74921
     },
     {
       "reference": "ES-2497",
       "name": "Humedales de Valdemanco Wetland Reserve",
-      "latitude": 40.8733,
-      "longitude": -3.675
+      "latitude": 40.8533,
+      "longitude": -3.64479
     },
     {
       "reference": "ES-2498",
       "name": "Lagunas de Sotillo y Picón de los Conejos Wetland Reserve",
-      "latitude": 40.3644,
-      "longitude": -3.50389
+      "latitude": 40.3615,
+      "longitude": -3.50345
     },
     {
       "reference": "ES-2499",
       "name": "Laguna de la Grulla Wetland Reserve",
-      "latitude": 40.4189,
-      "longitude": -4.15583
+      "latitude": 40.5334,
+      "longitude": -4.15963
     },
     {
       "reference": "ES-2500",
@@ -170333,6 +170597,18 @@
       "name": "Volcà de la Crosa Ecological Park",
       "latitude": 41.9213,
       "longitude": 2.7408
+    },
+    {
+      "reference": "ES-2505",
+      "name": "Seixido Protected Landscape",
+      "latitude": 42.7627,
+      "longitude": -9.05958
+    },
+    {
+      "reference": "ES-2506",
+      "name": "Fontiñas Protected Landscape",
+      "latitude": 42.8834,
+      "longitude": -8.52343
     },
     {
       "reference": "ET-0001",
@@ -178082,7 +178358,7 @@
     },
     {
       "reference": "FI-1288",
-      "name": "25.437511102097186 National Park",
+      "name": "Boxin soiden luonnonsuojelualu State Nature Preserve",
       "latitude": 60.2968,
       "longitude": 25.4375
     },
@@ -212617,6 +212893,72 @@
       "longitude": -0.108
     },
     {
+      "reference": "FR-15189",
+      "name": "Marais de Maoeuil Biological Reserve",
+      "latitude": 50.3158,
+      "longitude": 2.70724
+    },
+    {
+      "reference": "FR-15190",
+      "name": "Lacs de Clairvaux Biological Reserve",
+      "latitude": 46.564,
+      "longitude": 5.749
+    },
+    {
+      "reference": "FR-15191",
+      "name": "Pelouse de Beriat Biological Reserve",
+      "latitude": 46.571,
+      "longitude": 5.738
+    },
+    {
+      "reference": "FR-15192",
+      "name": "Pelouses de l'echaud Biological Reserve",
+      "latitude": 46.565,
+      "longitude": 5.715
+    },
+    {
+      "reference": "FR-15193",
+      "name": "Pelouses de sous France Biological Reserve",
+      "latitude": 46.556,
+      "longitude": 5.704
+    },
+    {
+      "reference": "FR-15194",
+      "name": "Prairies humides de l'Achapt Biological Reserve",
+      "latitude": 46.558,
+      "longitude": 5.723
+    },
+    {
+      "reference": "FR-15195",
+      "name": "Sous les carres Biological Reserve",
+      "latitude": 46.549,
+      "longitude": 5.723
+    },
+    {
+      "reference": "FR-15196",
+      "name": "Bocage sur le mont Biological Reserve",
+      "latitude": 46.538,
+      "longitude": 5.694
+    },
+    {
+      "reference": "FR-15197",
+      "name": "Sur signoge Biological Reserve",
+      "latitude": 46.534,
+      "longitude": 5.71
+    },
+    {
+      "reference": "FR-15198",
+      "name": "Sur les roches Biological Reserve",
+      "latitude": 46.537,
+      "longitude": 5.72
+    },
+    {
+      "reference": "FR-15199",
+      "name": "Mont Saint Martin Conservation Area",
+      "latitude": 43.292,
+      "longitude": 3.502
+    },
+    {
       "reference": "FR-1526",
       "name": "Morvan Regional Park",
       "latitude": 47.2758,
@@ -234014,9 +234356,9 @@
     },
     {
       "reference": "FR-6065",
-      "name": "ETANGS DE SACLAY Biological Reserve",
-      "latitude": 48.7412,
-      "longitude": 2.16567
+      "name": "VALLEES DE L'YONNE ET DE LA BAULCHE ET FORETS AUTOUR D'AUXERRE Biological Reserve",
+      "latitude": 47.755,
+      "longitude": 3.459
     },
     {
       "reference": "FR-6066",
@@ -260168,7 +260510,7 @@
     },
     {
       "reference": "GB-0417",
-      "name": "Openshaw Park Country Park",
+      "name": "Openshaw Park",
       "latitude": 53.592,
       "longitude": -2.27947
     },
@@ -266846,7 +267188,7 @@
     },
     {
       "reference": "GB-1656",
-      "name": "Coton Country Reserve",
+      "name": "Coton Countryside Reserve Country Park",
       "latitude": 52.2008,
       "longitude": 0.067779
     },
@@ -271334,7 +271676,7 @@
     },
     {
       "reference": "GB-2415",
-      "name": "Elton Reservoir Country Park",
+      "name": "Elton (The Raz) Reservoir Wetland & Scenic Reserve",
       "latitude": 53.5827,
       "longitude": -2.3194
     },
@@ -274040,7 +274382,7 @@
     },
     {
       "reference": "GB-2868",
-      "name": "Hurworth Burn National Scenic Trail",
+      "name": "Hurworth Burn to Station Town National Scenic Trail",
       "latitude": 54.6999,
       "longitude": -1.36382
     },
@@ -281744,7 +282086,7 @@
     },
     {
       "reference": "GB-4164",
-      "name": "Irwell Vale Halt Reserve",
+      "name": "Irwell Vale Halt Heritage & Historic Site",
       "latitude": 53.6774,
       "longitude": -2.31556
     },
@@ -287450,7 +287792,7 @@
     },
     {
       "reference": "GB-5125",
-      "name": "Boz Park",
+      "name": "Boz Park Local Nature Reserve",
       "latitude": 53.5524,
       "longitude": -2.27112
     },
@@ -289088,7 +289430,7 @@
     },
     {
       "reference": "GB-5401",
-      "name": "Withins (Little Raz) Reservoir Reserve",
+      "name": "Withins (Little Raz) Reservoir SBI & Black Lane Ponds Biological Reserve",
       "latitude": 53.5743,
       "longitude": -2.32526
     },
@@ -296629,6 +296971,960 @@
       "longitude": -1.37808
     },
     {
+      "reference": "GB-6671",
+      "name": "Trevor Rowson Local Nature Reserve",
+      "latitude": 51.7819,
+      "longitude": -3.17186
+    },
+    {
+      "reference": "GB-6672",
+      "name": "The Archaeological Way National Scenic Trail",
+      "latitude": 53.1738,
+      "longitude": -1.25467
+    },
+    {
+      "reference": "GB-6673",
+      "name": "Bury & Bolton Greenway National Scenic Trail",
+      "latitude": 53.5714,
+      "longitude": -2.37314
+    },
+    {
+      "reference": "GB-6674",
+      "name": "West Bradieston and Craig of Garvock Site of Significant Scientific Interest",
+      "latitude": 56.8104,
+      "longitude": -2.44464
+    },
+    {
+      "reference": "GB-6675",
+      "name": "Morven and Mullachdubh SSSI Site of Significant Scientific Interest",
+      "latitude": 57.1261,
+      "longitude": -3.04413
+    },
+    {
+      "reference": "GB-6676",
+      "name": "Craigendarroch SSSI Site of Significant Scientific Interest",
+      "latitude": 57.0557,
+      "longitude": -3.04876
+    },
+    {
+      "reference": "GB-6677",
+      "name": "Lochnagar Special Protection Area Protected Area",
+      "latitude": 56.9508,
+      "longitude": -3.23276
+    },
+    {
+      "reference": "GB-6678",
+      "name": "Northern Corries SSSI Site of Significant Scientific Interest",
+      "latitude": 57.1277,
+      "longitude": -3.69745
+    },
+    {
+      "reference": "GB-6679",
+      "name": "Glas Tulaichean SSSI Site of Significant Scientific Interest",
+      "latitude": 56.865,
+      "longitude": -3.55835
+    },
+    {
+      "reference": "GB-6680",
+      "name": "Wymeswold Meadows Nature Reserve",
+      "latitude": 52.8022,
+      "longitude": -1.09338
+    },
+    {
+      "reference": "GB-6681",
+      "name": "Mackintosh Country Park",
+      "latitude": 54.009,
+      "longitude": -1.4788
+    },
+    {
+      "reference": "GB-6682",
+      "name": "Harrogate Ringway National Scenic Trail",
+      "latitude": 54.0099,
+      "longitude": -1.49265
+    },
+    {
+      "reference": "GB-6683",
+      "name": "Knaresborough Forest Park",
+      "latitude": 54.0079,
+      "longitude": -1.48756
+    },
+    {
+      "reference": "GB-6684",
+      "name": "Foolish Wood Forest Reserve",
+      "latitude": 54.0103,
+      "longitude": -1.48125
+    },
+    {
+      "reference": "GB-6685",
+      "name": "Knaresborough Riverside & Conyngham Hall Picnic Area & Park Reserve",
+      "latitude": 54.011,
+      "longitude": -1.48043
+    },
+    {
+      "reference": "GB-6686",
+      "name": "Smockmill Common Local Nature Reserve",
+      "latitude": 52.5358,
+      "longitude": 1.26952
+    },
+    {
+      "reference": "GB-6687",
+      "name": "Dunston Common Local Nature Reserve",
+      "latitude": 52.5751,
+      "longitude": 1.28561
+    },
+    {
+      "reference": "GB-6688",
+      "name": "Danby Wood Nature Reserve",
+      "latitude": 52.6034,
+      "longitude": 1.27592
+    },
+    {
+      "reference": "GB-6689",
+      "name": "Marston Marsh Nature Reserve",
+      "latitude": 52.6027,
+      "longitude": 1.27339
+    },
+    {
+      "reference": "GB-6690",
+      "name": "Eaton Common Local Nature Reserve",
+      "latitude": 52.5987,
+      "longitude": 1.25954
+    },
+    {
+      "reference": "GB-6691",
+      "name": "Brundall Church Fen Nature Reserve",
+      "latitude": 52.6223,
+      "longitude": 1.42829
+    },
+    {
+      "reference": "GB-6692",
+      "name": "Castlerigg Stone Circle Heritage & Historic Site",
+      "latitude": 54.603,
+      "longitude": -3.09839
+    },
+    {
+      "reference": "GB-6693",
+      "name": "Bartley Reservoir Scenic Reserve",
+      "latitude": 52.4288,
+      "longitude": -1.99895
+    },
+    {
+      "reference": "GB-6694",
+      "name": "Ley Hill Country Park",
+      "latitude": 52.4222,
+      "longitude": -1.98176
+    },
+    {
+      "reference": "GB-6695",
+      "name": "Manor Farm Country Park",
+      "latitude": 52.4258,
+      "longitude": -1.96053
+    },
+    {
+      "reference": "GB-6696",
+      "name": "Warren House Gill Scenic & Historical Reserve",
+      "latitude": 54.7753,
+      "longitude": -1.31297
+    },
+    {
+      "reference": "GB-6697",
+      "name": "Stoke Bruerne Brick Pits Nature Reserve",
+      "latitude": 52.1389,
+      "longitude": -0.913279
+    },
+    {
+      "reference": "GB-6698",
+      "name": "Ramsden Corner Nature Reserve",
+      "latitude": 52.2018,
+      "longitude": -1.08728
+    },
+    {
+      "reference": "GB-6699",
+      "name": "Bugbrooke Meadow Nature Reserve",
+      "latitude": 52.2216,
+      "longitude": -1.01714
+    },
+    {
+      "reference": "GB-6700",
+      "name": "Gamston & Eaton Woods & Roadside Verges NR & Site of Significant Scientific Interest",
+      "latitude": 53.2857,
+      "longitude": -0.910056
+    },
+    {
+      "reference": "GB-6701",
+      "name": "Kirton Wood Site of Significant Scientific Interest",
+      "latitude": 53.2081,
+      "longitude": -0.94231
+    },
+    {
+      "reference": "GB-6702",
+      "name": "Whitacre Heath Nature Reserve",
+      "latitude": 52.5339,
+      "longitude": -1.69479
+    },
+    {
+      "reference": "GB-6703",
+      "name": "Shustoke Reservoir Scenic Reserve",
+      "latitude": 52.5172,
+      "longitude": -1.66531
+    },
+    {
+      "reference": "GB-6704",
+      "name": "Coalhouse Fort Historic & Country Park",
+      "latitude": 51.4648,
+      "longitude": 0.433874
+    },
+    {
+      "reference": "GB-6705",
+      "name": "Marks Hill Wood Nature Reserve",
+      "latitude": 51.5649,
+      "longitude": 0.432749
+    },
+    {
+      "reference": "GB-6706",
+      "name": "Hanningfield Reservoir Nature & Country Park",
+      "latitude": 51.6524,
+      "longitude": 0.501223
+    },
+    {
+      "reference": "GB-6707",
+      "name": "Lake Meadows Park",
+      "latitude": 51.634,
+      "longitude": 0.418809
+    },
+    {
+      "reference": "GB-6708",
+      "name": "Cwm Dwythwch Site of Significant Scientific Interest",
+      "latitude": 53.0976,
+      "longitude": -4.1433
+    },
+    {
+      "reference": "GB-6709",
+      "name": "Lough Mourne State Fishing Lake",
+      "latitude": 54.7595,
+      "longitude": -5.8027
+    },
+    {
+      "reference": "GB-6710",
+      "name": "Knavesmire Woodland Reserve",
+      "latitude": 53.9324,
+      "longitude": -1.09981
+    },
+    {
+      "reference": "GB-6711",
+      "name": "Hagg Wood Forest Reserve",
+      "latitude": 53.9652,
+      "longitude": -0.959214
+    },
+    {
+      "reference": "GB-6712",
+      "name": "Huworth Burn Reservoir Scenic Site",
+      "latitude": 54.6999,
+      "longitude": -1.36811
+    },
+    {
+      "reference": "GB-6713",
+      "name": "West Square & Gardens Historic Site",
+      "latitude": 54.28,
+      "longitude": -0.406552
+    },
+    {
+      "reference": "GB-6714",
+      "name": "Alma Square Gardens Historic Site & Pocket Park",
+      "latitude": 54.2812,
+      "longitude": -0.404993
+    },
+    {
+      "reference": "GB-6715",
+      "name": "North Yorkshire Centenary Way National Scenic Trail",
+      "latitude": 54.1847,
+      "longitude": -0.447887
+    },
+    {
+      "reference": "GB-6716",
+      "name": "Barcombe Mills Local Nature Reserve",
+      "latitude": 50.9141,
+      "longitude": 0.0382658
+    },
+    {
+      "reference": "GB-6717",
+      "name": "Warley Moor Reservoir Reserve",
+      "latitude": 53.7847,
+      "longitude": -1.95616
+    },
+    {
+      "reference": "GB-6718",
+      "name": "Doe Park Reservoir Reserve",
+      "latitude": 53.8027,
+      "longitude": -1.88489
+    },
+    {
+      "reference": "GB-6719",
+      "name": "Glapthorn Cow Pasture NR & Site of Significant Scientific Interest",
+      "latitude": 52.5031,
+      "longitude": -0.524612
+    },
+    {
+      "reference": "GB-6720",
+      "name": "National Waterways Heritage & Historic Site",
+      "latitude": 53.288,
+      "longitude": -2.89115
+    },
+    {
+      "reference": "GB-6721",
+      "name": "Elton Reservoir Basin & Wetlands Country Park",
+      "latitude": 53.5757,
+      "longitude": -2.32191
+    },
+    {
+      "reference": "GB-6722",
+      "name": "Mynydd Mawr Woodland Park",
+      "latitude": 51.7922,
+      "longitude": -4.11953
+    },
+    {
+      "reference": "GB-6723",
+      "name": "Bewl Water Country Park",
+      "latitude": 51.0789,
+      "longitude": 0.395295
+    },
+    {
+      "reference": "GB-6724",
+      "name": "Bough Beech Reservoir & Nature Reserve",
+      "latitude": 51.2178,
+      "longitude": 0.14118
+    },
+    {
+      "reference": "GB-6725",
+      "name": "Darrick & Newstead Woods Local Nature Reserve",
+      "latitude": 51.3679,
+      "longitude": 0.074141
+    },
+    {
+      "reference": "GB-6726",
+      "name": "Bookham Commons National Park",
+      "latitude": 51.2913,
+      "longitude": -0.386579
+    },
+    {
+      "reference": "GB-6727",
+      "name": "Sheepleas Nature Reserve",
+      "latitude": 51.2565,
+      "longitude": -0.442421
+    },
+    {
+      "reference": "GB-6728",
+      "name": "Wareham Forest Reserve",
+      "latitude": 50.7364,
+      "longitude": -2.17524
+    },
+    {
+      "reference": "GB-6729",
+      "name": "Holliday Country Park",
+      "latitude": 54.7618,
+      "longitude": -1.60284
+    },
+    {
+      "reference": "GB-6730",
+      "name": "Great High Wood Forest Reserve",
+      "latitude": 54.7614,
+      "longitude": -1.57026
+    },
+    {
+      "reference": "GB-6731",
+      "name": "Broompark Woodland & Picnic Scenic Site",
+      "latitude": 54.7678,
+      "longitude": -1.6118
+    },
+    {
+      "reference": "GB-6732",
+      "name": "Berwick Castle & Castle Vale Historic Site & Park",
+      "latitude": 55.7732,
+      "longitude": -2.01046
+    },
+    {
+      "reference": "GB-6733",
+      "name": "Berwick Coronation Park",
+      "latitude": 55.775,
+      "longitude": -2.01191
+    },
+    {
+      "reference": "GB-6734",
+      "name": "Berwick Pier Historical Reserve",
+      "latitude": 55.7682,
+      "longitude": -1.99191
+    },
+    {
+      "reference": "GB-6735",
+      "name": "Brampton Moat (Motte) & Monument Historic Site",
+      "latitude": 54.9443,
+      "longitude": -2.73001
+    },
+    {
+      "reference": "GB-6736",
+      "name": "Orcombe Point Historic Site",
+      "latitude": 50.6072,
+      "longitude": -3.38529
+    },
+    {
+      "reference": "GB-6737",
+      "name": "Abbey Park",
+      "latitude": 52.0904,
+      "longitude": -1.94513
+    },
+    {
+      "reference": "GB-6738",
+      "name": "Crown Meadow Park Reserve",
+      "latitude": 52.088,
+      "longitude": -1.94895
+    },
+    {
+      "reference": "GB-6739",
+      "name": "Corporation Meadow Park Reserve",
+      "latitude": 52.0872,
+      "longitude": -1.95545
+    },
+    {
+      "reference": "GB-6740",
+      "name": "St Richards Open Space Park",
+      "latitude": 52.0814,
+      "longitude": -1.94233
+    },
+    {
+      "reference": "GB-6741",
+      "name": "Battleton Brook Open Space Nature Reserve",
+      "latitude": 52.0864,
+      "longitude": -1.94263
+    },
+    {
+      "reference": "GB-6742",
+      "name": "Grange Quarry Wood & Oak Beck Park",
+      "latitude": 54.0093,
+      "longitude": -1.55505
+    },
+    {
+      "reference": "GB-6743",
+      "name": "Denton Moor & Lippersley Pike Hillside & Historic Site",
+      "latitude": 53.9683,
+      "longitude": -1.78283
+    },
+    {
+      "reference": "GB-6744",
+      "name": "Timble Ings Woodland Reserve",
+      "latitude": 53.9788,
+      "longitude": -1.72588
+    },
+    {
+      "reference": "GB-6745",
+      "name": "Winterburn Reservoir Scenic Reserve",
+      "latitude": 54.0417,
+      "longitude": -2.08452
+    },
+    {
+      "reference": "GB-6746",
+      "name": "Stratford Recreation Park",
+      "latitude": 52.1879,
+      "longitude": -1.70429
+    },
+    {
+      "reference": "GB-6747",
+      "name": "Firs Gardens Park",
+      "latitude": 52.1906,
+      "longitude": -1.71244
+    },
+    {
+      "reference": "GB-6748",
+      "name": "Serpentine Gardens Park",
+      "latitude": 54.6907,
+      "longitude": -1.23497
+    },
+    {
+      "reference": "GB-6749",
+      "name": "Briercliffe Scenic Site",
+      "latitude": 53.8125,
+      "longitude": -2.15124
+    },
+    {
+      "reference": "GB-6750",
+      "name": "Bishop Wilton Deep Dale Site of Significant Scientific Interest",
+      "latitude": 53.9938,
+      "longitude": -0.756046
+    },
+    {
+      "reference": "GB-6751",
+      "name": "Beckhead Plantation Site of Significant Scientific Interest",
+      "latitude": 53.9729,
+      "longitude": -0.757758
+    },
+    {
+      "reference": "GB-6752",
+      "name": "Keasey Dale Site of Significant Scientific Interest",
+      "latitude": 53.9725,
+      "longitude": -0.668731
+    },
+    {
+      "reference": "GB-6753",
+      "name": "Bishop Wilton Poorland Site of Significant Scientific Interest",
+      "latitude": 53.9917,
+      "longitude": -0.812907
+    },
+    {
+      "reference": "GB-6754",
+      "name": "Thixen Dale & Longdale Site of Significant Scientific Interest",
+      "latitude": 54.0171,
+      "longitude": -0.70979
+    },
+    {
+      "reference": "GB-6755",
+      "name": "Horse Dale & Holm Dale Site of Significant Scientific Interest",
+      "latitude": 54.0096,
+      "longitude": -0.659272
+    },
+    {
+      "reference": "GB-6756",
+      "name": "Vessey Pasture Dale and Back Dale Site of Significant Scientific Interest",
+      "latitude": 54.0458,
+      "longitude": -0.719649
+    },
+    {
+      "reference": "GB-6757",
+      "name": "Waterdale Site of Significant Scientific Interest",
+      "latitude": 54.0447,
+      "longitude": -0.750404
+    },
+    {
+      "reference": "GB-6758",
+      "name": "Mill Park Nature Reserve",
+      "latitude": 52.3055,
+      "longitude": -1.08872
+    },
+    {
+      "reference": "GB-6759",
+      "name": "Cotton End Park",
+      "latitude": 52.3073,
+      "longitude": -1.05818
+    },
+    {
+      "reference": "GB-6760",
+      "name": "Nene Way National Scenic Trail",
+      "latitude": 52.568,
+      "longitude": -0.192239
+    },
+    {
+      "reference": "GB-6761",
+      "name": "Jurassic Way National Scenic Trail",
+      "latitude": 52.4229,
+      "longitude": -1.04653
+    },
+    {
+      "reference": "GB-6762",
+      "name": "Withymead Nature Reserve",
+      "latitude": 51.5404,
+      "longitude": -1.1346
+    },
+    {
+      "reference": "GB-6763",
+      "name": "Acomb Wood West Woodland Reserve",
+      "latitude": 53.9379,
+      "longitude": -1.13587
+    },
+    {
+      "reference": "GB-6764",
+      "name": "Wetherby Triangle Woodland Reserve",
+      "latitude": 53.9341,
+      "longitude": -1.39185
+    },
+    {
+      "reference": "GB-6765",
+      "name": "Broadway Green Linear Country Park",
+      "latitude": 53.5407,
+      "longitude": -2.15591
+    },
+    {
+      "reference": "GB-6766",
+      "name": "Stratford-Upon-Avon Local Nature Reserve",
+      "latitude": 52.1971,
+      "longitude": -1.69535
+    },
+    {
+      "reference": "GB-6767",
+      "name": "Coombe Brook Valley Nature Reserve",
+      "latitude": 51.4711,
+      "longitude": -2.5324
+    },
+    {
+      "reference": "GB-6768",
+      "name": "Foxrush Farm Community Woodland Reserve",
+      "latitude": 54.6024,
+      "longitude": -1.0903
+    },
+    {
+      "reference": "GB-6769",
+      "name": "Happy Bottom Nature Reserve",
+      "latitude": 50.7828,
+      "longitude": -2.00923
+    },
+    {
+      "reference": "GB-6770",
+      "name": "Letcombe Valley Nature Reserve",
+      "latitude": 51.5718,
+      "longitude": -1.45721
+    },
+    {
+      "reference": "GB-6771",
+      "name": "Willow Walk Nature Reserve",
+      "latitude": 51.5942,
+      "longitude": -1.42371
+    },
+    {
+      "reference": "GB-6772",
+      "name": "Abbey Fishponds Local Nature Reserve",
+      "latitude": 51.6782,
+      "longitude": -1.26044
+    },
+    {
+      "reference": "GB-6773",
+      "name": "Dry Sandford Pit Nature Reserve",
+      "latitude": 51.6939,
+      "longitude": -1.3259
+    },
+    {
+      "reference": "GB-6774",
+      "name": "St George Victorian Park",
+      "latitude": 51.4618,
+      "longitude": -2.54735
+    },
+    {
+      "reference": "GB-6775",
+      "name": "Nightingale Valley Nature Reserve",
+      "latitude": 51.442,
+      "longitude": -2.54777
+    },
+    {
+      "reference": "GB-6776",
+      "name": "St Anne's Wood Nature Reserve",
+      "latitude": 51.4507,
+      "longitude": -2.54508
+    },
+    {
+      "reference": "GB-6777",
+      "name": "Bathurst Park",
+      "latitude": 51.7239,
+      "longitude": -2.53182
+    },
+    {
+      "reference": "GB-6778",
+      "name": "Chase Wood Forest Reserve",
+      "latitude": 51.8956,
+      "longitude": -2.58061
+    },
+    {
+      "reference": "GB-6779",
+      "name": "Coppett Hill Local Nature Reserve",
+      "latitude": 51.8605,
+      "longitude": -2.62084
+    },
+    {
+      "reference": "GB-6780",
+      "name": "Holly Banks Nature Reserve",
+      "latitude": 52.7575,
+      "longitude": -2.97969
+    },
+    {
+      "reference": "GB-6781",
+      "name": "Faington Park",
+      "latitude": 53.7049,
+      "longitude": -2.68575
+    },
+    {
+      "reference": "GB-6782",
+      "name": "Grimsargh Wetlands Nature Reserve",
+      "latitude": 53.8062,
+      "longitude": -2.62224
+    },
+    {
+      "reference": "GB-6783",
+      "name": "East Keswick Marsh Nature Reserve",
+      "latitude": 53.8916,
+      "longitude": -1.45454
+    },
+    {
+      "reference": "GB-6784",
+      "name": "Bardsey Fields Nature Reserve",
+      "latitude": 53.8874,
+      "longitude": -1.44611
+    },
+    {
+      "reference": "GB-6785",
+      "name": "Saintbridge Balancing Ponds Open Space & Nature Reserve",
+      "latitude": 51.8483,
+      "longitude": -2.21964
+    },
+    {
+      "reference": "GB-6786",
+      "name": "Hucclecote Meadows LNR & Site of Significant Scientific Interest",
+      "latitude": 51.8457,
+      "longitude": -2.18783
+    },
+    {
+      "reference": "GB-6787",
+      "name": "Green Lane Local Nature Reserve",
+      "latitude": 51.8466,
+      "longitude": -2.18648
+    },
+    {
+      "reference": "GB-6788",
+      "name": "Clock Tower Park",
+      "latitude": 51.8487,
+      "longitude": -2.20529
+    },
+    {
+      "reference": "GB-6789",
+      "name": "Kemerton Lake Nature Reserve",
+      "latitude": 52.0237,
+      "longitude": -2.08938
+    },
+    {
+      "reference": "GB-6790",
+      "name": "John Moore Nature Reserve",
+      "latitude": 52.0285,
+      "longitude": -2.07904
+    },
+    {
+      "reference": "GB-6791",
+      "name": "Gainford Millennium Green Park",
+      "latitude": 54.544,
+      "longitude": -1.74071
+    },
+    {
+      "reference": "GB-6792",
+      "name": "Low Barns Nature Reserve",
+      "latitude": 54.6779,
+      "longitude": -1.75129
+    },
+    {
+      "reference": "GB-6793",
+      "name": "Blackhill & Consett Park",
+      "latitude": 54.8585,
+      "longitude": -1.83838
+    },
+    {
+      "reference": "GB-6794",
+      "name": "Hetton Bogs Nature Reserve & Site of Significant Scientific Interest",
+      "latitude": 54.825,
+      "longitude": -1.45695
+    },
+    {
+      "reference": "GB-6795",
+      "name": "Station Burn Local Nature Reserve",
+      "latitude": 54.9586,
+      "longitude": -1.4595
+    },
+    {
+      "reference": "GB-6796",
+      "name": "Pelaw (Hebburn) Quarry Pond Local Nature Reserve",
+      "latitude": 54.9572,
+      "longitude": -1.51652
+    },
+    {
+      "reference": "GB-6797",
+      "name": "The Kittiwake Tower Local Nature Reserve",
+      "latitude": 54.966,
+      "longitude": -1.58391
+    },
+    {
+      "reference": "GB-6798",
+      "name": "Clearbury Down Site of Significant Scientific Interest",
+      "latitude": 51.016,
+      "longitude": -1.78746
+    },
+    {
+      "reference": "GB-6799",
+      "name": "RSPB Franchises Wood Forest Reserve",
+      "latitude": 50.9525,
+      "longitude": -1.66848
+    },
+    {
+      "reference": "GB-6800",
+      "name": "Copythorne Common Nature Reserve",
+      "latitude": 50.937,
+      "longitude": -1.56167
+    },
+    {
+      "reference": "GB-6801",
+      "name": "Awbridge Nature Reserve",
+      "latitude": 51.0096,
+      "longitude": -1.53344
+    },
+    {
+      "reference": "GB-6802",
+      "name": "Bobbingworth Nature Reserve",
+      "latitude": 51.7341,
+      "longitude": 0.224345
+    },
+    {
+      "reference": "GB-6803",
+      "name": "Epworth Turbary Nature Reserve",
+      "latitude": 53.5247,
+      "longitude": -0.859312
+    },
+    {
+      "reference": "GB-6804",
+      "name": "Silloth Military National Historic Trail",
+      "latitude": 54.8934,
+      "longitude": -3.35933
+    },
+    {
+      "reference": "GB-6805",
+      "name": "Magdalen Hill Down Chalkland Hillside Reserve",
+      "latitude": 51.0609,
+      "longitude": -1.28011
+    },
+    {
+      "reference": "GB-6806",
+      "name": "Cullompton CCA Fields Park Reserve",
+      "latitude": 50.8565,
+      "longitude": -3.38685
+    },
+    {
+      "reference": "GB-6807",
+      "name": "Deep Dene & Pontop Pike Local Nature Reserve",
+      "latitude": 54.8717,
+      "longitude": -1.76723
+    },
+    {
+      "reference": "GB-6808",
+      "name": "Castlefields Wood Nature Reserve",
+      "latitude": 54.9679,
+      "longitude": -1.84212
+    },
+    {
+      "reference": "GB-6809",
+      "name": "Wylam Haughs Nature Reserve",
+      "latitude": 54.973,
+      "longitude": -1.82503
+    },
+    {
+      "reference": "GB-6810",
+      "name": "Heddon Common Local Nature Reserve",
+      "latitude": 54.9937,
+      "longitude": -1.80308
+    },
+    {
+      "reference": "GB-6811",
+      "name": "Clara Vale Local Nature Reserve",
+      "latitude": 54.9784,
+      "longitude": -1.79602
+    },
+    {
+      "reference": "GB-6812",
+      "name": "Norton Grange Marsh Local Nature Reserve",
+      "latitude": 54.5803,
+      "longitude": -1.31881
+    },
+    {
+      "reference": "GB-6813",
+      "name": "East Cramlington Local Nature Reserve",
+      "latitude": 55.0802,
+      "longitude": -1.55284
+    },
+    {
+      "reference": "GB-6814",
+      "name": "Close House Riverside NR & Site of Significant Scientific Interest",
+      "latitude": 54.9807,
+      "longitude": -1.79988
+    },
+    {
+      "reference": "GB-6815",
+      "name": "Sugley Dene Nature Reserve",
+      "latitude": 54.9856,
+      "longitude": -1.70288
+    },
+    {
+      "reference": "GB-6816",
+      "name": "Denton Dene (South) Nature Reserve",
+      "latitude": 54.9787,
+      "longitude": -1.69491
+    },
+    {
+      "reference": "GB-6817",
+      "name": "Walbottle & Throckley Dene Nature Reserve",
+      "latitude": 54.996,
+      "longitude": -1.74729
+    },
+    {
+      "reference": "GB-6818",
+      "name": "Walbottle Brickworks Local Nature Reserve",
+      "latitude": 54.985,
+      "longitude": -1.73393
+    },
+    {
+      "reference": "GB-6819",
+      "name": "Mixenden Reservoir Scenic Reserve",
+      "latitude": 53.7549,
+      "longitude": -1.90914
+    },
+    {
+      "reference": "GB-6820",
+      "name": "Battyeford Island Nature Reserve",
+      "latitude": 53.6805,
+      "longitude": -1.71558
+    },
+    {
+      "reference": "GB-6821",
+      "name": "Thunderbridge Meadows Nature Reserve",
+      "latitude": 53.6071,
+      "longitude": -1.71427
+    },
+    {
+      "reference": "GB-6822",
+      "name": "Merrydale Clough Nature Reserve",
+      "latitude": 53.6257,
+      "longitude": -1.90149
+    },
+    {
+      "reference": "GB-6823",
+      "name": "Jonno's Field Nature Reserve",
+      "latitude": 54.2884,
+      "longitude": -0.427037
+    },
+    {
+      "reference": "GB-6824",
+      "name": "Wykeham Forest Reserve",
+      "latitude": 54.2815,
+      "longitude": -0.560316
+    },
+    {
+      "reference": "GB-6825",
+      "name": "Walkmill Community Woodland Reserve",
+      "latitude": 54.5536,
+      "longitude": -3.53837
+    },
+    {
+      "reference": "GB-6826",
+      "name": "Silloth AKA Skinburness Green Park Reserve",
+      "latitude": 54.8698,
+      "longitude": -3.38986
+    },
+    {
+      "reference": "GB-6827",
+      "name": "Town Moor Historic Site",
+      "latitude": 54.6989,
+      "longitude": -1.1792
+    },
+    {
+      "reference": "GB-6828",
+      "name": "Swansea Vale Nature Reserve",
+      "latitude": 51.6668,
+      "longitude": -3.90047
+    },
+    {
+      "reference": "GB-6829",
+      "name": "Severn Way Walk (Wales Side) National Scenic Trail",
+      "latitude": 52.6575,
+      "longitude": -3.14609
+    },
+    {
       "reference": "GD-0001",
       "name": "Levera National Park",
       "latitude": 12.2225,
@@ -296693,6 +297989,36 @@
       "name": "Annandale Waterfall and Forest Park",
       "latitude": 12.0875,
       "longitude": -61.7171
+    },
+    {
+      "reference": "GD-0013",
+      "name": "Paradise Beach Coastal Park",
+      "latitude": 12.4737,
+      "longitude": -61.4793
+    },
+    {
+      "reference": "GD-0014",
+      "name": "Mount Pleasant Beach Coastal Park",
+      "latitude": 12.4788,
+      "longitude": -61.4326
+    },
+    {
+      "reference": "GD-0015",
+      "name": "Sanchez Beach Coastal Park",
+      "latitude": 12.5249,
+      "longitude": -61.388
+    },
+    {
+      "reference": "GD-0016",
+      "name": "Grand Anse Beach Coastal Park",
+      "latitude": 12.0241,
+      "longitude": -61.7621
+    },
+    {
+      "reference": "GD-0017",
+      "name": "Hillsborough Beach Coastal Park",
+      "latitude": 12.485,
+      "longitude": -61.457
     },
     {
       "reference": "GE-0001",
@@ -299423,6 +300749,24 @@
       "name": "PARAKTIA THALASSIA ZONI APO PARGA EOS AKROTIRIO AGIOS THOMAS (PREVEZA), AKR. KELADIO - AG. THOMAS Natura 2000",
       "latitude": 39.2378,
       "longitude": 20.4764
+    },
+    {
+      "reference": "GR-0294",
+      "name": "KYTHIRA KAI GYRO NISIDES: PRASONISI, DRAGONERA, ANTIDRAGONERA, AVGO, KAPELLO, KOUFO KAI FIDONISI National Park",
+      "latitude": 36.3389,
+      "longitude": 22.9218
+    },
+    {
+      "reference": "GR-0295",
+      "name": "ANTIKYTHIRA - PRASONISI KAI LAGOUVARDOS Natura 2000",
+      "latitude": 35.8728,
+      "longitude": 23.2955
+    },
+    {
+      "reference": "GR-0296",
+      "name": "LIMNES VOULKARIA KAI SALTINI Natura 2000",
+      "latitude": 38.8694,
+      "longitude": 20.8374
     },
     {
       "reference": "GS-0001",
@@ -302551,6 +303895,12 @@
       "longitude": 15.9232
     },
     {
+      "reference": "HR-0389",
+      "name": "Zagorske gore Nature Park",
+      "latitude": 46.1823,
+      "longitude": 16.1322
+    },
+    {
       "reference": "HU-0001",
       "name": "Aggtelek National Park",
       "latitude": 48.5072,
@@ -303329,6 +304679,18 @@
       "name": "Pécsi National Lakeshore",
       "latitude": 46.157,
       "longitude": 18.1371
+    },
+    {
+      "reference": "HU-0131",
+      "name": "Wesselényi Park",
+      "latitude": 46.6549,
+      "longitude": 21.2671
+    },
+    {
+      "reference": "HU-0132",
+      "name": "Almássy-Kastély Park",
+      "latitude": 46.6431,
+      "longitude": 21.3403
     },
     {
       "reference": "ID-0001",
@@ -305423,6 +306785,54 @@
       "name": "Ballygilgan-Lissadell Nature Reserve",
       "latitude": 54.341,
       "longitude": -8.549
+    },
+    {
+      "reference": "IE-0244",
+      "name": "Hell Fire Club Recreation Park",
+      "latitude": 53.2521,
+      "longitude": -6.32091
+    },
+    {
+      "reference": "IE-0245",
+      "name": "Massy’s Estate National Park",
+      "latitude": 53.2532,
+      "longitude": -6.32088
+    },
+    {
+      "reference": "IE-0246",
+      "name": "Curragh Woods Forest Reserve",
+      "latitude": 51.9417,
+      "longitude": -8.2311
+    },
+    {
+      "reference": "IE-0247",
+      "name": "Lough Conn Conservation Area",
+      "latitude": 54.028,
+      "longitude": -9.23762
+    },
+    {
+      "reference": "IE-0248",
+      "name": "Lough Cullin Conservation Area",
+      "latitude": 53.9722,
+      "longitude": -9.18107
+    },
+    {
+      "reference": "IE-0249",
+      "name": "Emo Court Estate Historic Site",
+      "latitude": 53.1096,
+      "longitude": -7.20107
+    },
+    {
+      "reference": "IE-0250",
+      "name": "Farmleigh Estate Historic Site",
+      "latitude": 53.366,
+      "longitude": -6.36103
+    },
+    {
+      "reference": "IE-0251",
+      "name": "Skellig Michael / Sceilg Mhichíl UNESCO Geopark",
+      "latitude": 51.7716,
+      "longitude": -10.5395
     },
     {
       "reference": "IL-0001",
@@ -309053,12 +310463,6 @@
       "name": "Castel Porziano (Tenuta presidenziale) Natura 2000",
       "latitude": 41.7247,
       "longitude": 12.4004
-    },
-    {
-      "reference": "IT-0134",
-      "name": "Riserva Naturale Statale Isole di Ventotene e Santo Stefano National Nature Reserve",
-      "latitude": 40.7926,
-      "longitude": 13.4239
     },
     {
       "reference": "IT-0135",
@@ -312855,8 +314259,8 @@
     {
       "reference": "IT-0770",
       "name": "Monti Ausoni e Aurunci Natura 2000",
-      "latitude": 41.2889,
-      "longitude": 13.4559
+      "latitude": 41.3763,
+      "longitude": 13.4856
     },
     {
       "reference": "IT-0771",
@@ -315746,9 +317150,9 @@
     },
     {
       "reference": "IT-1252",
-      "name": "Monumento Naturale Campo Soriano Other Conservation Area",
-      "latitude": 41.3577,
-      "longitude": 13.2457
+      "name": "Canali in disuso della bonifica Pontina Natura 2000",
+      "latitude": 41.3633,
+      "longitude": 13.1847
     },
     {
       "reference": "IT-1253",
@@ -316803,8 +318207,8 @@
     {
       "reference": "IT-1429",
       "name": "A.N.P.I.L. Monte Castellare Other Conservation Area",
-      "latitude": 43.7706,
-      "longitude": 10.4426
+      "latitude": 43.7612,
+      "longitude": 10.4499
     },
     {
       "reference": "IT-1430",
@@ -320797,6 +322201,36 @@
       "longitude": 8.46372
     },
     {
+      "reference": "IT-2102",
+      "name": "Duna di Capratica Natura 2000",
+      "latitude": 41.2761,
+      "longitude": 13.3906
+    },
+    {
+      "reference": "IT-2103",
+      "name": "Lago Lungo Natura 2000",
+      "latitude": 41.2753,
+      "longitude": 13.4014
+    },
+    {
+      "reference": "IT-2104",
+      "name": "Pinete dell'Isola di Ischia Natura 2000",
+      "latitude": 40.73,
+      "longitude": 13.9406
+    },
+    {
+      "reference": "IT-2105",
+      "name": "Stazione di Cyperus polystachyus di Ischia Natura 2000",
+      "latitude": 40.7244,
+      "longitude": 13.9375
+    },
+    {
+      "reference": "IT-2106",
+      "name": "Rupi costiere dell'Isola di Ischia Natura 2000",
+      "latitude": 40.71,
+      "longitude": 13.9406
+    },
+    {
       "reference": "JE-0001",
       "name": "Jersey National Park",
       "latitude": 49.2275,
@@ -321351,8 +322785,8 @@
     {
       "reference": "JP-0125",
       "name": "Tenryu-Okumikawa Quasi-National Park",
-      "latitude": 35.1872,
-      "longitude": 137.757
+      "latitude": 35.2124,
+      "longitude": 137.838
     },
     {
       "reference": "JP-0126",
@@ -322361,6 +323795,12 @@
       "name": "Daigo Koiki Prefectural Park",
       "latitude": 36.7915,
       "longitude": 140.35
+    },
+    {
+      "reference": "JP-1122",
+      "name": "Doho Prefectural Park",
+      "latitude": 36.0619,
+      "longitude": 140.123
     },
     {
       "reference": "JP-1123",
@@ -324733,6 +326173,12 @@
       "longitude": 135.336
     },
     {
+      "reference": "JP-1527",
+      "name": "Izumisano Kyuryo Ryokuchi Prefectural Park",
+      "latitude": 34.3674,
+      "longitude": 135.331
+    },
+    {
       "reference": "JP-1528",
       "name": "Takirenzan Prefectural Nature Park",
       "latitude": 35.1238,
@@ -325061,6 +326507,12 @@
       "name": "Fuse Sports Prefectural Park",
       "latitude": 35.4991,
       "longitude": 134.182
+    },
+    {
+      "reference": "JP-1588",
+      "name": "Dandan Hiroba Prefectural Park",
+      "latitude": 35.424,
+      "longitude": 133.337
     },
     {
       "reference": "JP-1589",
@@ -325923,8 +327375,8 @@
     {
       "reference": "JP-1733",
       "name": "Itsuki Gokanosho Prefectural Nature Park",
-      "latitude": 32.5386,
-      "longitude": 130.939
+      "latitude": 32.4456,
+      "longitude": 130.817
     },
     {
       "reference": "JP-1734",
@@ -326121,8 +327573,8 @@
     {
       "reference": "JP-1766",
       "name": "Osumi Nanbu Prefectural Nature Park",
-      "latitude": 31.0915,
-      "longitude": 130.827
+      "latitude": 31.0865,
+      "longitude": 130.8
     },
     {
       "reference": "JP-1767",
@@ -326567,6 +328019,12 @@
       "name": "Saitamaken Agricultual and Forestry Prefectural Park",
       "latitude": 36.1123,
       "longitude": 139.288
+    },
+    {
+      "reference": "JP-1844",
+      "name": "Fuetsu Prefectural Park",
+      "latitude": 35.5201,
+      "longitude": 137.831
     },
     {
       "reference": "JP-1845",
@@ -328189,6 +329647,108 @@
       "longitude": 137.481
     },
     {
+      "reference": "JP-2124",
+      "name": "Kojimako Fureai Yacho Shinsui Prefectural Park",
+      "latitude": 34.5543,
+      "longitude": 133.941
+    },
+    {
+      "reference": "JP-2125",
+      "name": "Shizen Kankyo Taiken Prefectural Park",
+      "latitude": 34.5519,
+      "longitude": 133.934
+    },
+    {
+      "reference": "JP-2126",
+      "name": "Yaguinoiwa Prefectural Park",
+      "latitude": 34.6916,
+      "longitude": 133.802
+    },
+    {
+      "reference": "JP-2127",
+      "name": "Koshigaya Prefectural Park",
+      "latitude": 35.8842,
+      "longitude": 139.758
+    },
+    {
+      "reference": "JP-2128",
+      "name": "21st Century Prefectural Forest",
+      "latitude": 35.3379,
+      "longitude": 139.055
+    },
+    {
+      "reference": "JP-2129",
+      "name": "Hiroshima Minato Prefectural Park",
+      "latitude": 34.3544,
+      "longitude": 132.455
+    },
+    {
+      "reference": "JP-2130",
+      "name": "Ujina Pier Prefectural Park",
+      "latitude": 34.353,
+      "longitude": 132.47
+    },
+    {
+      "reference": "JP-2131",
+      "name": "Ujina Chuo Prefectural Park",
+      "latitude": 34.3543,
+      "longitude": 132.469
+    },
+    {
+      "reference": "JP-2132",
+      "name": "Kanon Marina Prefectural Park",
+      "latitude": 34.3586,
+      "longitude": 132.412
+    },
+    {
+      "reference": "JP-2133",
+      "name": "Yabase Kihan Island Prefectural Park",
+      "latitude": 35.0064,
+      "longitude": 135.913
+    },
+    {
+      "reference": "JP-2134",
+      "name": "Omi Fudoki no Oka Historical Prefectural Park",
+      "latitude": 35.1503,
+      "longitude": 136.146
+    },
+    {
+      "reference": "JP-2135",
+      "name": "Water Front Prefectural Park",
+      "latitude": 31.5932,
+      "longitude": 130.563
+    },
+    {
+      "reference": "JP-2136",
+      "name": "Kenmin no Mori Prefectural Park",
+      "latitude": 31.8407,
+      "longitude": 130.616
+    },
+    {
+      "reference": "JP-2137",
+      "name": "Uenohara Jomon no Mori Historical Prefectural Park",
+      "latitude": 31.7112,
+      "longitude": 130.8
+    },
+    {
+      "reference": "JP-2138",
+      "name": "Fujinokuni Tagonoura Port Prefectural Park",
+      "latitude": 35.1362,
+      "longitude": 138.694
+    },
+    {
+      "reference": "JP-2139",
+      "name": "Suzukawa Seaside Sports Prefectural Park",
+      "latitude": 35.1371,
+      "longitude": 138.707
+    },
+    {
+      "reference": "JP-2140",
+      "name": "Akogiura Seaside Prefectural Park",
+      "latitude": 34.7065,
+      "longitude": 136.522
+    },
+    {
       "reference": "KE-0001",
       "name": "Aberdare National Park",
       "latitude": -0.35,
@@ -328568,7 +330128,7 @@
     },
     {
       "reference": "KR-0015",
-      "name": "북한산국립공원 Mountain Park",
+      "name": "북한산국립공원 Bukhansan National Park National Park",
       "latitude": 37.6587,
       "longitude": 126.978
     },
@@ -329377,12 +330937,6 @@
       "longitude": 128.628
     },
     {
-      "reference": "KR-0153",
-      "name": "탑골공원(서울)\tSeoul Tapgol National Historic Site",
-      "latitude": 37.5706,
-      "longitude": 126.988
-    },
-    {
       "reference": "KR-0154",
       "name": "합천호국공원\tHapcheon Daeyaseong National Historic Site",
       "latitude": 35.5618,
@@ -329437,12 +330991,6 @@
       "longitude": 127.008
     },
     {
-      "reference": "KR-0163",
-      "name": "경복궁\tGyeongbokgung Palace National Historic Site",
-      "latitude": 37.5805,
-      "longitude": 126.977
-    },
-    {
       "reference": "KR-0164",
       "name": "경희궁\tGyeonghuigung Palace National Historic Site",
       "latitude": 37.5705,
@@ -329491,18 +331039,6 @@
       "longitude": 127.206
     },
     {
-      "reference": "KR-0172",
-      "name": "덕수궁\tDeoksugung Palace National Historic Site",
-      "latitude": 37.5657,
-      "longitude": 126.976
-    },
-    {
-      "reference": "KR-0173",
-      "name": "선릉과정릉\tSeolleung and Jeongneung Royal Tomb National Historic Site",
-      "latitude": 37.5073,
-      "longitude": 127.049
-    },
-    {
       "reference": "KR-0174",
       "name": "양주온릉\tOlleung Royal Tomb(Yangju) National Historic Site",
       "latitude": 37.7198,
@@ -329521,42 +331057,6 @@
       "longitude": 128.453
     },
     {
-      "reference": "KR-0177",
-      "name": "의릉\tUireung Royal Tomb National Historic Site",
-      "latitude": 37.6039,
-      "longitude": 127.056
-    },
-    {
-      "reference": "KR-0178",
-      "name": "정릉\tJeongneung Royal Tomb National Historic District",
-      "latitude": 37.6014,
-      "longitude": 127.007
-    },
-    {
-      "reference": "KR-0179",
-      "name": "종묘\tJongmyo Shrine National Historic Site",
-      "latitude": 37.5743,
-      "longitude": 126.994
-    },
-    {
-      "reference": "KR-0180",
-      "name": "창경궁\tChanggyeonggung Palace National Historic Site",
-      "latitude": 37.5782,
-      "longitude": 126.995
-    },
-    {
-      "reference": "KR-0181",
-      "name": "창덕궁\tChangdeokgung Palace National Historic Site",
-      "latitude": 37.5789,
-      "longitude": 126.99
-    },
-    {
-      "reference": "KR-0182",
-      "name": "태릉과강릉\tTaereung and Gangneung Royal Tomb National Historic Site",
-      "latitude": 37.6364,
-      "longitude": 127.098
-    },
-    {
       "reference": "KR-0183",
       "name": "파주삼릉\tSamneung Royal Tomb(Paju) National Historic Site",
       "latitude": 37.744,
@@ -329567,12 +331067,6 @@
       "name": "파주장릉\tJangneung Royal Tomb(Paju) National Historic Site",
       "latitude": 37.7735,
       "longitude": 126.708
-    },
-    {
-      "reference": "KR-0186",
-      "name": "홍릉\tHongneung Royal Tombs (UNESCO) National Historic Site",
-      "latitude": 37.5896,
-      "longitude": 127.044
     },
     {
       "reference": "KR-0187",
@@ -329929,18 +331423,6 @@
       "longitude": 125.108
     },
     {
-      "reference": "KR-0246",
-      "name": "나무섬해양보호구역\tNamuseom Island National Nature Reserve",
-      "latitude": 34.9889,
-      "longitude": 128.993
-    },
-    {
-      "reference": "KR-0247",
-      "name": "남형제섬해양보호구역\tNamhyeongjeseom Island National Nature Reserve",
-      "latitude": 34.8848,
-      "longitude": 128.952
-    },
-    {
       "reference": "KR-0248",
       "name": "대이작도해양보호구역\tDaeijakdo Island National Nature Reserve",
       "latitude": 37.1718,
@@ -330041,12 +331523,6 @@
       "name": "국립대전현충원\tDaejeon Cemetery National Memorial",
       "latitude": 36.3757,
       "longitude": 127.288
-    },
-    {
-      "reference": "KR-0265",
-      "name": "국립서울현충원\tSeoul Cemetery National Memorial",
-      "latitude": 37.4985,
-      "longitude": 126.972
     },
     {
       "reference": "KR-0266",
@@ -330243,8 +331719,8 @@
     {
       "reference": "KR-0302",
       "name": "다대포해변공원\tDadaepo Beach National Park",
-      "latitude": 35.0556,
-      "longitude": 128.967
+      "latitude": 35.0464,
+      "longitude": 128.966
     },
     {
       "reference": "KR-0303",
@@ -330531,8 +332007,8 @@
     {
       "reference": "KR-0350",
       "name": "봉산근린공원\tBongsan Mountain Provincial Park",
-      "latitude": 37.5852,
-      "longitude": 126.892
+      "latitude": 37.5918,
+      "longitude": 126.9
     },
     {
       "reference": "KR-0351",
@@ -330602,7 +332078,7 @@
     },
     {
       "reference": "KR-0362",
-      "name": "서화산공원\tSeohwasan Mountain Provincial Park",
+      "name": "화천생활체육공원\tHwacheon Sports Provincial Recreation Park Provincial Park",
       "latitude": 38.0968,
       "longitude": 127.702
     },
@@ -330639,8 +332115,8 @@
     {
       "reference": "KR-0368",
       "name": "아차산공원\tAchasan Mountain Provincial Park",
-      "latitude": 37.5802,
-      "longitude": 127.103
+      "latitude": 37.5636,
+      "longitude": 127.102
     },
     {
       "reference": "KR-0369",
@@ -331034,15 +332510,9 @@
     },
     {
       "reference": "KR-0434",
-      "name": "방이동생태경관보전지역\tBang-idong Provincial Conservation Park",
+      "name": "방이동생태경관보전지역\tBangi-dong Provincial 5(1)(g) Reserve",
       "latitude": 37.5121,
       "longitude": 127.137
-    },
-    {
-      "reference": "KR-0435",
-      "name": "한강밤섬생태경관보전지역\tHangang Bamseom Provincial Conservation Park",
-      "latitude": 37.5385,
-      "longitude": 126.929
     },
     {
       "reference": "KR-0436",
@@ -331353,7 +332823,7 @@
     {
       "reference": "KR-0487",
       "name": "두레뜰공원\tDureddeul Provincial Ecological Park",
-      "latitude": 37.2725,
+      "latitude": 37.2709,
       "longitude": 126.944
     },
     {
@@ -331586,7 +333056,7 @@
     },
     {
       "reference": "KR-0526",
-      "name": "서남물재생센터공원\tSeonammul Jaesaengsenteo Provincial Ecological Park",
+      "name": "서남물재생센터공원\tSeonam Water Recycling Center Park Provincial Ecological Park",
       "latitude": 37.5798,
       "longitude": 126.822
     },
@@ -331941,8 +333411,8 @@
     {
       "reference": "KR-0585",
       "name": "일원에코파크\tIrwon Eco Provincial Ecological Park",
-      "latitude": 37.4881,
-      "longitude": 127.083
+      "latitude": 37.4954,
+      "longitude": 127.088
     },
     {
       "reference": "KR-0586",
@@ -332103,8 +333573,8 @@
     {
       "reference": "KR-0612",
       "name": "태화강국가정원\tTaehwagang Garden National Park",
-      "latitude": 35.5372,
-      "longitude": 129.37
+      "latitude": 35.5475,
+      "longitude": 129.298
     },
     {
       "reference": "KR-0613",
@@ -332123,12 +333593,6 @@
       "name": "하림공원\tHarim Provincial Ecological Park",
       "latitude": 35.512,
       "longitude": 127.743
-    },
-    {
-      "reference": "KR-0616",
-      "name": "한강밤섬생태경관보전지역\tHangang Bamseom Provincial Ecological Park",
-      "latitude": 37.5385,
-      "longitude": 126.929
     },
     {
       "reference": "KR-0617",
@@ -332331,8 +333795,8 @@
     {
       "reference": "KR-0650",
       "name": "장태산자연휴양림\tJangtaesan Natural Recreation Forest Provincial Park",
-      "latitude": 35.6898,
-      "longitude": 127.34
+      "latitude": 36.221,
+      "longitude": 127.339
     },
     {
       "reference": "KR-0651",
@@ -332894,7 +334358,7 @@
     },
     {
       "reference": "KR-0744",
-      "name": "화천생활체육공원\tHwacheon Sports Provincial Recreation Park",
+      "name": "서화산공원 Seohwasan Mountain Provincial Park Provincial Park",
       "latitude": 38.1074,
       "longitude": 127.702
     },
@@ -333116,7 +334580,7 @@
     },
     {
       "reference": "KR-0781",
-      "name": "궁산근린공원\tG궁산근린공원\tGungsan Neighborhoodngsan Neighborhood Provincial Park",
+      "name": "궁산근린공원 Gungsan Neighborhood Provincial Park Provincial Park",
       "latitude": 37.5743,
       "longitude": 126.841
     },
@@ -333309,8 +334773,8 @@
     {
       "reference": "KR-0813",
       "name": "달맞이동산(부산)\tDalmaji Dongsan Neighborhood Provincial Park",
-      "latitude": 35.1583,
-      "longitude": 129.156
+      "latitude": 35.1562,
+      "longitude": 129.18
     },
     {
       "reference": "KR-0814",
@@ -333326,7 +334790,7 @@
     },
     {
       "reference": "KR-0816",
-      "name": "답십리근린공원\tDapsimn Neighborhood Provincial Park",
+      "name": "답십리근린공원\tDapsimni Neighborhood Provincial Park",
       "latitude": 37.5733,
       "longitude": 127.064
     },
@@ -334047,8 +335511,8 @@
     {
       "reference": "KR-0936",
       "name": "성북근린공원\tSeongbuk Neighborhood Provincial Park",
-      "latitude": 37.6005,
-      "longitude": 127.024
+      "latitude": 37.5958,
+      "longitude": 127.007
     },
     {
       "reference": "KR-0937",
@@ -334215,8 +335679,8 @@
     {
       "reference": "KR-0964",
       "name": "신사근린공원\tSinsa Neighborhood Provincial Park",
-      "latitude": 37.6047,
-      "longitude": 126.915
+      "latitude": 37.593,
+      "longitude": 126.91
     },
     {
       "reference": "KR-0965",
@@ -334257,8 +335721,8 @@
     {
       "reference": "KR-0971",
       "name": "쌍청공원\tSsangcheong Neighborhood Provincial Park",
-      "latitude": 36.6346,
-      "longitude": 127.326
+      "latitude": 36.6425,
+      "longitude": 127.332
     },
     {
       "reference": "KR-0972",
@@ -334293,8 +335757,8 @@
     {
       "reference": "KR-0977",
       "name": "암남공원\tAmnam Neighborhood Provincial Park",
-      "latitude": 35.0617,
-      "longitude": 129.015
+      "latitude": 35.059,
+      "longitude": 129.016
     },
     {
       "reference": "KR-0978",
@@ -334437,8 +335901,8 @@
     {
       "reference": "KR-1001",
       "name": "오창중앙근린공원\tOchang Central Neighborhood Provincial Park",
-      "latitude": 36.4243,
-      "longitude": 127.251
+      "latitude": 36.715,
+      "longitude": 127.419
     },
     {
       "reference": "KR-1002",
@@ -334551,8 +336015,8 @@
     {
       "reference": "KR-1020",
       "name": "운천공원\tUncheon Neighborhood Provincial Park",
-      "latitude": 36.3839,
-      "longitude": 127.282
+      "latitude": 36.6465,
+      "longitude": 127.471
     },
     {
       "reference": "KR-1021",
@@ -334599,8 +336063,8 @@
     {
       "reference": "KR-1028",
       "name": "원봉공원\tWonbong Neighborhood Provincial Park",
-      "latitude": 36.3634,
-      "longitude": 127.305
+      "latitude": 36.6124,
+      "longitude": 127.513
     },
     {
       "reference": "KR-1029",
@@ -335211,8 +336675,8 @@
     {
       "reference": "KR-1130",
       "name": "화합공원\tHwahap Neighborhood Provincial Park",
-      "latitude": 37.1143,
-      "longitude": 126.903
+      "latitude": 37.106,
+      "longitude": 126.905
     },
     {
       "reference": "KR-1131",
@@ -335865,7 +337329,7 @@
     {
       "reference": "KR-1242",
       "name": "진고개공원(용인) Jin-gogae Park National Park",
-      "latitude": 37.3367,
+      "latitude": 37.333,
       "longitude": 127.113
     },
     {
@@ -336125,6 +337589,78 @@
       "name": "가마지천수변공원(호수마을)\tGamajicheon Waterside (Hosumaeul) Ecological Park",
       "latitude": 37.6528,
       "longitude": 126.637
+    },
+    {
+      "reference": "KR-1286",
+      "name": "서울둘레길 Seoul Trail Provincial Park",
+      "latitude": 37.6157,
+      "longitude": 126.991
+    },
+    {
+      "reference": "KR-1287",
+      "name": "서울대공원 Seoul Grand Park Provincial Park",
+      "latitude": 37.4309,
+      "longitude": 127.015
+    },
+    {
+      "reference": "KR-1288",
+      "name": "안산도시자연공원 Ansan Nature Park Provincial Park",
+      "latitude": 37.5731,
+      "longitude": 126.943
+    },
+    {
+      "reference": "KR-1289",
+      "name": "문화비축기지 Oil Tank Culture Park Provincial Park",
+      "latitude": 37.5708,
+      "longitude": 126.895
+    },
+    {
+      "reference": "KR-1290",
+      "name": "서서울호수공원 Seoseoul Lake Park Provincial Park",
+      "latitude": 37.5272,
+      "longitude": 126.83
+    },
+    {
+      "reference": "KR-1291",
+      "name": "도산공원 Dosan Park Provincial Park",
+      "latitude": 37.5245,
+      "longitude": 127.035
+    },
+    {
+      "reference": "KR-1292",
+      "name": "천호공원 Cheonho Park Provincial Park",
+      "latitude": 37.5444,
+      "longitude": 127.126
+    },
+    {
+      "reference": "KR-1293",
+      "name": "노량진공원(대방공원) Noryangjin (Daebang) Provincial Park",
+      "latitude": 37.508,
+      "longitude": 126.928
+    },
+    {
+      "reference": "KR-1294",
+      "name": "샘말공원 Saemmal Provincial Park",
+      "latitude": 37.4643,
+      "longitude": 126.938
+    },
+    {
+      "reference": "KR-1295",
+      "name": "독산자연공원 Doksan Nature Provincial Park",
+      "latitude": 37.4738,
+      "longitude": 126.909
+    },
+    {
+      "reference": "KR-1296",
+      "name": "금천체육공원 Geumcheon Sports Provincial Park",
+      "latitude": 37.4682,
+      "longitude": 126.909
+    },
+    {
+      "reference": "KR-1297",
+      "name": "금천폭포공원 Geumcheon Waterfall Provincial Park",
+      "latitude": 37.4467,
+      "longitude": 126.904
     },
     {
       "reference": "KW-0001",
@@ -337139,6 +338675,18 @@
       "name": "Cas en Bas Coastal Park",
       "latitude": 14.0909,
       "longitude": -60.9273
+    },
+    {
+      "reference": "LC-0044",
+      "name": "National Cultural Centre Park",
+      "latitude": 14.0147,
+      "longitude": -60.989
+    },
+    {
+      "reference": "LC-0045",
+      "name": "Morne Le Blanc Nature Reserve",
+      "latitude": 13.7587,
+      "longitude": -60.9991
     },
     {
       "reference": "LI-0001",
@@ -347102,7 +348650,7 @@
     },
     {
       "reference": "NL-0014",
-      "name": "De Zoom Kalmthoutse Heide Cross-Border Park National Park",
+      "name": "Grenspark Kalmthoutse Heide Park",
       "latitude": 51.402,
       "longitude": 4.39033
     },
@@ -348122,7 +349670,7 @@
     },
     {
       "reference": "NL-0195",
-      "name": "Gees National Park",
+      "name": "Gees Nature Park",
       "latitude": 52.7635,
       "longitude": 6.6415
     },
@@ -348815,6 +350363,12 @@
       "name": "Polder Zeevang Natura 2000",
       "latitude": 52.5476,
       "longitude": 4.9856
+    },
+    {
+      "reference": "NL-0313",
+      "name": "Koninklijke Houtvesterij Het Loo National Park",
+      "latitude": 52.2839,
+      "longitude": 5.85217
     },
     {
       "reference": "NO-0001",
@@ -351605,12 +353159,6 @@
       "name": "Forradalen Nature Reserve",
       "latitude": 65.5024,
       "longitude": 13.6394
-    },
-    {
-      "reference": "NO-0468",
-      "name": "Fosnes Prestegård Nature Reserve",
-      "latitude": 64.5183,
-      "longitude": 11.3564
     },
     {
       "reference": "NO-0469",
@@ -357716,7 +359264,7 @@
     },
     {
       "reference": "NO-1488",
-      "name": "Østmarka Nature Reserve",
+      "name": "Østmarka National Park",
       "latitude": 59.8399,
       "longitude": 11.0394
     },
@@ -375299,6 +376847,54 @@
       "name": "Sepik River Management Area",
       "latitude": -4.061,
       "longitude": 144.062
+    },
+    {
+      "reference": "PG-0004",
+      "name": "Jimi Valley National Park",
+      "latitude": -5.303,
+      "longitude": 144.31
+    },
+    {
+      "reference": "PG-0005",
+      "name": "Loroko National Park",
+      "latitude": -5.439,
+      "longitude": 150.516
+    },
+    {
+      "reference": "PG-0006",
+      "name": "Mc Adam National Park",
+      "latitude": -7.271,
+      "longitude": 146.625
+    },
+    {
+      "reference": "PG-0007",
+      "name": "Mt Susu Nature Park",
+      "latitude": -7.269,
+      "longitude": 146.6
+    },
+    {
+      "reference": "PG-0008",
+      "name": "Mt Wilhelm National Park",
+      "latitude": -5.8,
+      "longitude": 145.033
+    },
+    {
+      "reference": "PG-0009",
+      "name": "Paga Hill National Park Reserve",
+      "latitude": -9.478,
+      "longitude": 147.149
+    },
+    {
+      "reference": "PG-0010",
+      "name": "Varirata National Park",
+      "latitude": -9.463,
+      "longitude": 147.36
+    },
+    {
+      "reference": "PG-0011",
+      "name": "Talele Island National Park",
+      "latitude": -4.16,
+      "longitude": 151.514
     },
     {
       "reference": "PH-0001",
@@ -394621,6 +396217,30 @@
       "longitude": 15.3684
     },
     {
+      "reference": "PL-2942",
+      "name": "Osada Wydmowa Nature Reserve",
+      "latitude": 53.1619,
+      "longitude": 22.3847
+    },
+    {
+      "reference": "PL-2943",
+      "name": "Stawy Osuchowskie Nature Reserve",
+      "latitude": 52.7391,
+      "longitude": 21.7275
+    },
+    {
+      "reference": "PL-2944",
+      "name": "Ochotnica Natura 2000",
+      "latitude": 49.5256,
+      "longitude": 20.3323
+    },
+    {
+      "reference": "PL-2945",
+      "name": "Kozie Żebro Nature Reserve",
+      "latitude": 49.4728,
+      "longitude": 21.1927
+    },
+    {
       "reference": "PM-0001",
       "name": "Isthme de Miquelon-Langlade Habitat Protection Area",
       "latitude": 46.9336,
@@ -405895,6 +407515,66 @@
       "longitude": 25.6177
     },
     {
+      "reference": "RO-1291",
+      "name": "Elisabeta Rizea Recreation Park",
+      "latitude": 44.4803,
+      "longitude": 26.0687
+    },
+    {
+      "reference": "RO-1292",
+      "name": "Oltenia de sub Munte Geopark",
+      "latitude": 45.2896,
+      "longitude": 23.9039
+    },
+    {
+      "reference": "RO-1293",
+      "name": "Rădița - Mânzu Nature Reserve",
+      "latitude": 45.2595,
+      "longitude": 24.1889
+    },
+    {
+      "reference": "RO-1294",
+      "name": "Cheile Cernei și Avenul Suspendat Protected Area",
+      "latitude": 45.2577,
+      "longitude": 23.8108
+    },
+    {
+      "reference": "RO-1295",
+      "name": "Valea Luncavăț Regional Reserve",
+      "latitude": 45.2391,
+      "longitude": 23.9032
+    },
+    {
+      "reference": "RO-1296",
+      "name": "Piramidele de la Slătioara Regional Reserve",
+      "latitude": 45.1082,
+      "longitude": 23.8907
+    },
+    {
+      "reference": "RO-1297",
+      "name": "Muntele și Pădurea Arnota Natural Area",
+      "latitude": 45.2023,
+      "longitude": 24.047
+    },
+    {
+      "reference": "RO-1298",
+      "name": "Curmătura Builei Natural Area",
+      "latitude": 45.2331,
+      "longitude": 24.0851
+    },
+    {
+      "reference": "RO-1299",
+      "name": "Piatra Scrisă Natural Area",
+      "latitude": 45.2095,
+      "longitude": 24.2434
+    },
+    {
+      "reference": "RO-1300",
+      "name": "Muntele Stogu Flora and Fauna Reserve",
+      "latitude": 45.2822,
+      "longitude": 24.1286
+    },
+    {
       "reference": "RS-0001",
       "name": "Fruška Gora National Park",
       "latitude": 45.1565,
@@ -407795,6 +409475,18 @@
       "name": "Malinovaya Zaseka National Park",
       "latitude": 54.0975,
       "longitude": 37.5143
+    },
+    {
+      "reference": "RU-0065",
+      "name": "Zaeltsovsky Bor Forest Park National Preserve",
+      "latitude": 55.0682,
+      "longitude": 82.8465
+    },
+    {
+      "reference": "RU-0066",
+      "name": "Central Siberian Botanical Garden of the Siberian Branch Nature Park",
+      "latitude": 54.8258,
+      "longitude": 83.1094
     },
     {
       "reference": "RW-0001",
@@ -420383,6 +422075,186 @@
       "name": "Hölick Natura 2000",
       "latitude": 61.6268,
       "longitude": 17.4785
+    },
+    {
+      "reference": "SE-1983",
+      "name": "Näsberg National Park",
+      "latitude": 61.1936,
+      "longitude": 14.3899
+    },
+    {
+      "reference": "SE-1984",
+      "name": "Rädån Nature Reserve",
+      "latitude": 61.1801,
+      "longitude": 14.4903
+    },
+    {
+      "reference": "SE-1985",
+      "name": "Tolvösand Natura 2000",
+      "latitude": 62.4505,
+      "longitude": 17.5386
+    },
+    {
+      "reference": "SE-1986",
+      "name": "Myckeläng hagmark Natura 2000",
+      "latitude": 62.4542,
+      "longitude": 17.5353
+    },
+    {
+      "reference": "SE-1987",
+      "name": "Indalsälvens delta Natura 2000",
+      "latitude": 62.5091,
+      "longitude": 17.4666
+    },
+    {
+      "reference": "SE-1988",
+      "name": "Masugnsgrundet Natura 2000",
+      "latitude": 62.5497,
+      "longitude": 17.3932
+    },
+    {
+      "reference": "SE-1989",
+      "name": "Långharsholmen Nature Reserve",
+      "latitude": 62.4702,
+      "longitude": 17.4696
+    },
+    {
+      "reference": "SE-1990",
+      "name": "Långharsholmen Natura 2000",
+      "latitude": 62.4673,
+      "longitude": 17.4771
+    },
+    {
+      "reference": "SE-1991",
+      "name": "Hansastaden Visby World Heritage Site",
+      "latitude": 57.6397,
+      "longitude": 18.2947
+    },
+    {
+      "reference": "SE-1992",
+      "name": "Skenholmen Natura 2000",
+      "latitude": 57.7966,
+      "longitude": 19.0409
+    },
+    {
+      "reference": "SE-1993",
+      "name": "Vristulven Nature Reserve",
+      "latitude": 58.5755,
+      "longitude": 13.7145
+    },
+    {
+      "reference": "SE-1994",
+      "name": "Tiveden Natura 2000",
+      "latitude": 58.7073,
+      "longitude": 14.5921
+    },
+    {
+      "reference": "SE-1995",
+      "name": "Fagertärn Nature Reserve",
+      "latitude": 58.7609,
+      "longitude": 14.696
+    },
+    {
+      "reference": "SE-1996",
+      "name": "Fagertjärn Natura 2000",
+      "latitude": 58.7655,
+      "longitude": 14.7017
+    },
+    {
+      "reference": "SE-1997",
+      "name": "Häggeby 91:1 Historic Site",
+      "latitude": 59.6669,
+      "longitude": 17.5211
+    },
+    {
+      "reference": "SE-1998",
+      "name": "Svankila Nature Refuge",
+      "latitude": 58.7761,
+      "longitude": 12.4771
+    },
+    {
+      "reference": "SE-1999",
+      "name": "Aboda Nature Reserve",
+      "latitude": 57.0673,
+      "longitude": 15.9622
+    },
+    {
+      "reference": "SE-2000",
+      "name": "Vättak Kungsgården Natura 2000",
+      "latitude": 58.0941,
+      "longitude": 13.8725
+    },
+    {
+      "reference": "SE-2001",
+      "name": "Ettaks strömmar Nature Reserve",
+      "latitude": 58.1065,
+      "longitude": 13.8979
+    },
+    {
+      "reference": "SE-2002",
+      "name": "Ettaks strömmar Natura 2000",
+      "latitude": 58.0994,
+      "longitude": 13.8881
+    },
+    {
+      "reference": "SE-2003",
+      "name": "Lena borg Nature Reserve",
+      "latitude": 58.2243,
+      "longitude": 13.8062
+    },
+    {
+      "reference": "SE-2004",
+      "name": "Ekedalen, Varv Nature Reserve",
+      "latitude": 58.1958,
+      "longitude": 13.8359
+    },
+    {
+      "reference": "SE-2005",
+      "name": "Gunniltorp Nature Reserve",
+      "latitude": 58.2217,
+      "longitude": 13.762
+    },
+    {
+      "reference": "SE-2006",
+      "name": "Gunniltorp Natura 2000",
+      "latitude": 58.2206,
+      "longitude": 13.7604
+    },
+    {
+      "reference": "SE-2007",
+      "name": "Hadängs lövskog Nature Reserve",
+      "latitude": 58.1174,
+      "longitude": 13.9917
+    },
+    {
+      "reference": "SE-2008",
+      "name": "Grimmestorp Nature Reserve",
+      "latitude": 58.0777,
+      "longitude": 13.9354
+    },
+    {
+      "reference": "SE-2009",
+      "name": "Grimestorp Nature Reserve",
+      "latitude": 58.0757,
+      "longitude": 13.935
+    },
+    {
+      "reference": "SE-2010",
+      "name": "Ljunghems backar Natura 2000",
+      "latitude": 58.0406,
+      "longitude": 13.8082
+    },
+    {
+      "reference": "SE-2011",
+      "name": "Grimstorp Natura 2000",
+      "latitude": 58.0045,
+      "longitude": 13.7842
+    },
+    {
+      "reference": "SE-2012",
+      "name": "Sånga 16:1 Historic Site",
+      "latitude": 59.3397,
+      "longitude": 17.669
     },
     {
       "reference": "SG-0001",
@@ -435199,6 +437071,24 @@
       "longitude": -171.848
     },
     {
+      "reference": "TK-0002",
+      "name": "Atafu Island National Park",
+      "latitude": -8.551,
+      "longitude": 172.5
+    },
+    {
+      "reference": "TK-0003",
+      "name": "Nukunonu Island National Park",
+      "latitude": -9.168,
+      "longitude": 171.809
+    },
+    {
+      "reference": "TK-0004",
+      "name": "Fakaofo Island National Park",
+      "latitude": -9.365,
+      "longitude": 171.215
+    },
+    {
       "reference": "TL-0001",
       "name": "Areia Branca Cristo Rei National Reserve",
       "latitude": -8.52492,
@@ -440427,8 +442317,8 @@
     {
       "reference": "US-0013",
       "name": "Chaco Culture National Historical Park",
-      "latitude": 36.053,
-      "longitude": -107.956
+      "latitude": 36.0304,
+      "longitude": -107.91
     },
     {
       "reference": "US-0014",
@@ -457365,7 +459255,7 @@
     {
       "reference": "US-11866",
       "name": "Rio Bonito Acquired Lands: Salazar Tract, BLM Recreation Management Area",
-      "latitude": 33.5246,
+      "latitude": 33.5249,
       "longitude": -105.456
     },
     {
@@ -466141,10 +468031,124 @@
       "longitude": -114.692
     },
     {
+      "reference": "US-13221",
+      "name": "Gordon W. Yeager-S.E. Unit Wildlife Management Area",
+      "latitude": 44.026,
+      "longitude": -92.4148
+    },
+    {
+      "reference": "US-13222",
+      "name": "Shooting Gallery BLM Historic Preservation Site",
+      "latitude": 37.3578,
+      "longitude": -115.275
+    },
+    {
+      "reference": "US-13223",
+      "name": "South Fork Canyon - Nevada BLM Special Recreation Management Area",
+      "latitude": 40.6883,
+      "longitude": -115.793
+    },
+    {
+      "reference": "US-13224",
+      "name": "South Fork Owyhee River - Nevada BLM Recreation Management Area",
+      "latitude": 41.8048,
+      "longitude": -116.471
+    },
+    {
+      "reference": "US-13225",
+      "name": "Steven's Camp BLM Special Recreation Management Area",
+      "latitude": 41.4903,
+      "longitude": -119.491
+    },
+    {
+      "reference": "US-13226",
+      "name": "Ward Mountain BLM Recreation Management Area",
+      "latitude": 39.2226,
+      "longitude": -114.97
+    },
+    {
+      "reference": "US-13227",
+      "name": "White River Narrows BLM Historic Preservation Site",
+      "latitude": 37.8343,
+      "longitude": -115.035
+    },
+    {
+      "reference": "US-13228",
+      "name": "ZOLD - Red Spring Picnic Area BLM Recreation Management Area",
+      "latitude": 36.1463,
+      "longitude": -115.419
+    },
+    {
+      "reference": "US-13229",
+      "name": "Arkansas River Water Trail Recreation Park",
+      "latitude": 35.4322,
+      "longitude": -94.3696
+    },
+    {
       "reference": "US-1323",
       "name": "Twin Lakes State Park",
       "latitude": 37.1752,
       "longitude": -78.2781
+    },
+    {
+      "reference": "US-13230",
+      "name": "Fairview Peak Earthquake Faults BLM Interpretive Site",
+      "latitude": 39.2811,
+      "longitude": -118.13
+    },
+    {
+      "reference": "US-13231",
+      "name": "Flynt Mountain Wildlife Management Area",
+      "latitude": 42.119,
+      "longitude": -72.3384
+    },
+    {
+      "reference": "US-13232",
+      "name": "Rattlesnake Mountain Wildlife Management Area",
+      "latitude": 42.0747,
+      "longitude": -72.1821
+    },
+    {
+      "reference": "US-13233",
+      "name": "Puddingstone Wildlife Management Area",
+      "latitude": 41.8991,
+      "longitude": -71.1539
+    },
+    {
+      "reference": "US-13234",
+      "name": "Bungy Mountain Wildlife Management Area",
+      "latitude": 42.2227,
+      "longitude": -72.8056
+    },
+    {
+      "reference": "US-13235",
+      "name": "Hog Mountain Wildlife Management Area",
+      "latitude": 42.597,
+      "longitude": -72.8365
+    },
+    {
+      "reference": "US-13236",
+      "name": "Rockdale Heights Wildlife Management Area",
+      "latitude": 42.2935,
+      "longitude": -73.3645
+    },
+    {
+      "reference": "US-13237",
+      "name": "Shaker Mill Brook Wildlife Management Area",
+      "latitude": 42.3327,
+      "longitude": -73.0891
+    },
+    {
+      "reference": "US-13238",
+      "name": "Lahontan National Fish Hatchery",
+      "latitude": 38.8878,
+      "longitude": -119.698
+    },
+    {
+      "reference": "US-13239",
+      "name": "Mason Valley Hatchery Outponds State Fish Hatchery",
+      "latitude": 39.0793,
+      "longitude": -119.116
     },
     {
       "reference": "US-1324",
@@ -466153,10 +468157,118 @@
       "longitude": -76.8716
     },
     {
+      "reference": "US-13240",
+      "name": "Gallagher State Fish Hatchery",
+      "latitude": 40.185,
+      "longitude": -115.492
+    },
+    {
+      "reference": "US-13241",
+      "name": "Lake Mead Fish Hatchery State Fish Hatchery",
+      "latitude": 36.0696,
+      "longitude": -114.808
+    },
+    {
+      "reference": "US-13242",
+      "name": "Spring Creek Rearing Station State Fish Hatchery",
+      "latitude": 38.9174,
+      "longitude": -114.106
+    },
+    {
+      "reference": "US-13243",
+      "name": "Two Forks State Wildlife Area",
+      "latitude": 45.8731,
+      "longitude": -122.713
+    },
+    {
+      "reference": "US-13244",
+      "name": "1838 Mountain Man Rendezvous State Historic Site",
+      "latitude": 43.0128,
+      "longitude": -108.361
+    },
+    {
+      "reference": "US-13245",
+      "name": "Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway",
+      "latitude": 41.2709,
+      "longitude": -109.622
+    },
+    {
+      "reference": "US-13246",
+      "name": "Carpenter Memorial State Conservation Area",
+      "latitude": 38.2831,
+      "longitude": -93.0736
+    },
+    {
+      "reference": "US-13247",
+      "name": "Big Muskego Lake State Wildlife Area",
+      "latitude": 42.846,
+      "longitude": -88.1486
+    },
+    {
+      "reference": "US-13248",
+      "name": "Fort Ruby National Historic Site",
+      "latitude": 40.0673,
+      "longitude": -115.524
+    },
+    {
+      "reference": "US-13249",
+      "name": "Nevada Northern Railway Museum State Historic Site",
+      "latitude": 39.2592,
+      "longitude": -114.868
+    },
+    {
       "reference": "US-1325",
       "name": "Wilderness Road State Park",
       "latitude": 36.6306,
       "longitude": -83.526
+    },
+    {
+      "reference": "US-13250",
+      "name": "Leonard Rockshelter National Historic Site",
+      "latitude": 39.9911,
+      "longitude": -118.51
+    },
+    {
+      "reference": "US-13251",
+      "name": "Virginia City Historic District National Historic District",
+      "latitude": 39.31,
+      "longitude": -119.65
+    },
+    {
+      "reference": "US-13252",
+      "name": "Stokes Castle National Historic Site",
+      "latitude": 39.4938,
+      "longitude": -117.079
+    },
+    {
+      "reference": "US-13253",
+      "name": "Sappington African American Cemetery State Historic Site",
+      "latitude": 39.0327,
+      "longitude": -93.015
+    },
+    {
+      "reference": "US-13254",
+      "name": "Van Nest Refuge Wildlife Management Area",
+      "latitude": 40.2691,
+      "longitude": -74.6715
+    },
+    {
+      "reference": "US-13255",
+      "name": "Hancock House Historic Site",
+      "latitude": 39.5081,
+      "longitude": -75.4603
+    },
+    {
+      "reference": "US-13256",
+      "name": "Menantico Ponds Wildlife Management Area",
+      "latitude": 39.3677,
+      "longitude": -74.9974
+    },
+    {
+      "reference": "US-13257",
+      "name": "Coosawhatchie Heritage Preserve Wildlife Management Area",
+      "latitude": 32.6916,
+      "longitude": -80.9193
     },
     {
       "reference": "US-1326",
@@ -473906,7 +476018,7 @@
     },
     {
       "reference": "US-2625",
-      "name": "Beaver Dam State Park",
+      "name": "Beaver Dam-Nevada State Park",
       "latitude": 37.5179,
       "longitude": -114.083
     },
@@ -506804,7 +508916,7 @@
     },
     {
       "reference": "US-8319",
-      "name": "Palisades Interstate State Park",
+      "name": "Palisades Interstate Park",
       "latitude": 40.953,
       "longitude": -73.9207
     },
@@ -512162,13 +514274,13 @@
     },
     {
       "reference": "US-9236",
-      "name": "Bald Mountain National Conservation Area",
+      "name": "Bald Mountain Wilderness Area",
       "latitude": 39.0813,
       "longitude": -115.318
     },
     {
       "reference": "US-9237",
-      "name": "Becky Peak BLM National Conservation Area",
+      "name": "Becky Peak BLM Wilderness Area",
       "latitude": 39.9729,
       "longitude": -114.595
     },
@@ -512186,7 +514298,7 @@
     },
     {
       "reference": "US-9241",
-      "name": "Bristlecone BLM National Conservation Area",
+      "name": "Bristlecone Wilderness Area",
       "latitude": 39.3959,
       "longitude": -114.883
     },
@@ -512198,13 +514310,13 @@
     },
     {
       "reference": "US-9244",
-      "name": "Currant Mountain National Conservation Area",
+      "name": "Currant Mountain Wilderness Area",
       "latitude": 38.9124,
       "longitude": -115.424
     },
     {
       "reference": "US-9245",
-      "name": "Delamar Mountains BLM National Conservation Area",
+      "name": "Delamar Mountains Wilderness Area",
       "latitude": 37.2435,
       "longitude": -114.884
     },
@@ -512216,31 +514328,31 @@
     },
     {
       "reference": "US-9247",
-      "name": "Eldorado BLM National Conservation Area",
+      "name": "Eldorado BLM Wilderness Area",
       "latitude": 35.9327,
       "longitude": -114.751
     },
     {
       "reference": "US-9248",
-      "name": "Far South Egans BLM National Conservation Area",
+      "name": "Far South Egans Wilderness Area",
       "latitude": 38.4633,
       "longitude": -114.94
     },
     {
       "reference": "US-9249",
-      "name": "Fortification Range BLM National Conservation Area",
+      "name": "Fortification Range BLM Wilderness Area",
       "latitude": 38.6115,
       "longitude": -114.449
     },
     {
       "reference": "US-9251",
-      "name": "Goshute Canyon BLM National Conservation Area",
-      "latitude": 40.0749,
-      "longitude": -114.846
+      "name": "Goshute Canyon BLM Wilderness Area",
+      "latitude": 40.052,
+      "longitude": -114.851
     },
     {
       "reference": "US-9252",
-      "name": "Government Peak BLM National Conservation Area",
+      "name": "Government Peak BLM Wilderness Area",
       "latitude": 39.5181,
       "longitude": -114.157
     },
@@ -512258,19 +514370,19 @@
     },
     {
       "reference": "US-9257",
-      "name": "Highland Ridge BLM National Conservation Area",
+      "name": "Highland Ridge BLM Wilderness Area",
       "latitude": 38.6705,
       "longitude": -114.266
     },
     {
       "reference": "US-9258",
-      "name": "Ireteba Peaks BLM National Conservation Area",
+      "name": "Ireteba Peaks BLM Wilderness Area",
       "latitude": 35.8718,
       "longitude": -114.756
     },
     {
       "reference": "US-9260",
-      "name": "Jumbo Springs BLM National Conservation Area",
+      "name": "Jumbo Springs Wilderness Area",
       "latitude": 36.2024,
       "longitude": -114.173
     },
@@ -512282,7 +514394,7 @@
     },
     {
       "reference": "US-9262",
-      "name": "Lime Canyon BLM National Conservation Area",
+      "name": "Lime Canyon BLM Wilderness Area",
       "latitude": 36.3945,
       "longitude": -114.257
     },
@@ -512294,13 +514406,13 @@
     },
     {
       "reference": "US-9264",
-      "name": "Meadow Valley Range BLM National Conservation Area",
+      "name": "Meadow Valley Range BLM Wilderness Area",
       "latitude": 36.9455,
       "longitude": -114.829
     },
     {
       "reference": "US-9265",
-      "name": "Mormon Mountains BLM National Conservation Area",
+      "name": "Mormon Mountains BLM Wilderness Area",
       "latitude": 36.9718,
       "longitude": -114.473
     },
@@ -512312,25 +514424,25 @@
     },
     {
       "reference": "US-9267",
-      "name": "Mount Grafton BLM National Conservation Area",
+      "name": "Mount Grafton BLM Wilderness Area",
       "latitude": 38.6962,
       "longitude": -114.733
     },
     {
       "reference": "US-9268",
-      "name": "Mount Irish BLM National Conservation Area",
+      "name": "Mount Irish BLM Wilderness Area",
       "latitude": 37.5413,
       "longitude": -115.404
     },
     {
       "reference": "US-9269",
-      "name": "Mount Moriah BLM National Conservation Area",
+      "name": "Mount Moriah BLM Wilderness Area",
       "latitude": 39.2723,
       "longitude": -114.196
     },
     {
       "reference": "US-9271",
-      "name": "Muddy Mountains BLM National Conservation Area",
+      "name": "Muddy Mountains BLM Wilderness Area",
       "latitude": 36.2891,
       "longitude": -114.682
     },
@@ -512354,13 +514466,13 @@
     },
     {
       "reference": "US-9275",
-      "name": "Pahute Peak BLM National Conservation Area",
+      "name": "Pahute Peak BLM Wilderness Area",
       "latitude": 41.284,
       "longitude": -119.058
     },
     {
       "reference": "US-9276",
-      "name": "Parsnip Peak  BLM National Conservation Area",
+      "name": "Parsnip Peak BLM Wilderness Area",
       "latitude": 38.1475,
       "longitude": -114.321
     },
@@ -512372,7 +514484,7 @@
     },
     {
       "reference": "US-9281",
-      "name": "South Egan Range BLM National Conservation Area",
+      "name": "South Egan Range BLM Wilderness Area",
       "latitude": 38.8576,
       "longitude": -114.915
     },
@@ -512384,13 +514496,13 @@
     },
     {
       "reference": "US-9283",
-      "name": "South McCullough BLM National Conservation Area",
+      "name": "South McCullough BLM Wilderness Area",
       "latitude": 35.6113,
       "longitude": -115.172
     },
     {
       "reference": "US-9284",
-      "name": "South Pahroc Range BLM National Conservation Area",
+      "name": "South Pahroc Range BLM Wilderness Area",
       "latitude": 37.537,
       "longitude": -115.026
     },
@@ -512402,13 +514514,13 @@
     },
     {
       "reference": "US-9286",
-      "name": "Table Mountain BLM National Conservation Area",
+      "name": "Table Mountain Wilderness Area",
       "latitude": 38.8123,
       "longitude": -116.587
     },
     {
       "reference": "US-9287",
-      "name": "Tunnel Spring BLM National Conservation Area",
+      "name": "Tunnel Spring Wilderness Area",
       "latitude": 37.5391,
       "longitude": -114.076
     },
@@ -512420,7 +514532,7 @@
     },
     {
       "reference": "US-9289",
-      "name": "Weepah Spring BLM National Conservation Area",
+      "name": "Weepah Spring BLM Wilderness Area",
       "latitude": 37.9864,
       "longitude": -115.068
     },
@@ -512432,7 +514544,7 @@
     },
     {
       "reference": "US-9292",
-      "name": "Worthington Mountains BLM National Conservation Area",
+      "name": "Worthington Mountains BLM Wilderness Area",
       "latitude": 37.8673,
       "longitude": -115.638
     },
@@ -518879,6 +520991,60 @@
       "name": "Cottesmore Park",
       "latitude": -26.049,
       "longitude": 28.0129
+    },
+    {
+      "reference": "ZA-0156",
+      "name": "Waters Meeting Nature Reserve",
+      "latitude": -33.3001,
+      "longitude": 26.8544
+    },
+    {
+      "reference": "ZA-0157",
+      "name": "New Germany Nature Reserve",
+      "latitude": -29.7566,
+      "longitude": 30.8935
+    },
+    {
+      "reference": "ZA-0158",
+      "name": "Tygerberg Nature Reserve",
+      "latitude": -33.8776,
+      "longitude": 18.5999
+    },
+    {
+      "reference": "ZA-0159",
+      "name": "Cape Recife Nature Reserve",
+      "latitude": -34.0278,
+      "longitude": 25.7007
+    },
+    {
+      "reference": "ZA-0160",
+      "name": "Maitland Nature Reserve",
+      "latitude": -33.9681,
+      "longitude": 25.3118
+    },
+    {
+      "reference": "ZA-0161",
+      "name": "Van Stadens Wild Flower Reserve",
+      "latitude": -33.9136,
+      "longitude": 25.2221
+    },
+    {
+      "reference": "ZA-0162",
+      "name": "Sardinia Bay Marine Protected Area",
+      "latitude": -34.0391,
+      "longitude": 25.4795
+    },
+    {
+      "reference": "ZA-0163",
+      "name": "Settlers Park Nature Reserve",
+      "latitude": -33.9679,
+      "longitude": 25.603
+    },
+    {
+      "reference": "ZA-0164",
+      "name": "Groendal Nature Reserve",
+      "latitude": -33.7026,
+      "longitude": 25.3165
     },
     {
       "reference": "ZM-0001",
