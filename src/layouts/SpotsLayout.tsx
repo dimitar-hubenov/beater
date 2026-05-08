@@ -36,7 +36,7 @@ export default function SpotsLayout({ filters, content }: SpotsLayoutProps) {
                         w-80 shrink-0
                         bg-(--bg-panel)
                         border-r border-(--border)
-                        fixed inset-y-0 left-0 z-20
+                        fixed inset-y-0 left-0 z-30
                         md:static md:z-auto
                         overflow-y-auto
                     "
